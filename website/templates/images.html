@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Images{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="text-center">📸 My Image Gallery</h2>
+    <div class="row">
+        {% for image in images %}
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="{{ url_for('static', filename='images/' + image) }}" 
+                     class="card-img-top img-thumbnail" alt="Image">
+                <div class="card-body text-center">
+                    <p class="card-text">{{ image }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Display an Image -->
+<img src="{{ url_for('static', filename='images/lol.jpg') }}" alt="My Picture" class="img-fluid rounded" width="500">
+<br></br>
+<!-- <img src="{{ url_for('static', filename='images/1.gif') }}" alt="My Picture" class="img-fluid rounded" width="500">
+<br></br>
+<img src="{{ url_for('static', filename='images/2.gif') }}" alt="My Picture" class="img-fluid rounded" width="500"> -->
+
+{% endblock %}
