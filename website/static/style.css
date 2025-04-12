@@ -1,0 +1,95 @@
+/* Dark Theme Styles */
+body {
+    background-color: #ffffff;  /* Dark background */
+    color: #6b5858;  /* Light text */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #1e1e1e; /* Dark card background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+/* Dark Mode (Now Optional) */
+body.dark-mode {
+    background-color: #1b1b1b;
+    color: #b6a6a6;
+}
+
+body.dark-mode .container {
+    background: #1e1e1e;
+    color: #6b5858;
+}
+
+button {
+    background-color: #6200ea; /* Purple button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3700b3;
+}
+
+#box {
+    width: 100%;
+    height: 200px;
+    background-color: #1e1e1e; /* Dark box background */
+    font-size: 1.5rem;
+    text-align: center;
+    animation-name: typewriter;
+    animation-duration: 4s;
+    animation-timing-function: steps(30, end);
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+   /*  border-radius: 10px;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    margin-top: 20px; */
+}
+img{
+    animation-duration: 4s;
+    animation-timing-function: steps(30, end);
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+.typewriter {
+    display: flex;
+    justify-content: center;
+}
+
+.typewriter p {
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-inline: auto;
+    overflow: hidden;
+/* keep on single line by default */
+    white-space: nowrap;
+/* the cursor effect */
+    border-right: 0.15em solid #b10a0a;
+/* steps = number of characters in the text */
+    animation: typing 3.5s steps(30) forwards,
+        blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink{
+    50% {
+        border-color: transparent;
+    }
+}

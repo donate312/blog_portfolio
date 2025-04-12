@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Videos{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="text-center">📸 My Video Gallery</h2>
+    <div class="row">
+        {% for video in videos %}
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="{{ url_for('static', filename='videos/' + video) }}" 
+                class="card-img-top img-thumbnail" alt="Video">
+                <div class="card-body text-center">
+                <p class="card-text">{{ Video }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Display a Video -->
+    <video width="600" controls>
+    <source src="{{ url_for('static', filename='videos/v4.mp4') }}" type="video/mp4">   
+    </video>
+
+    <br><br>
+
+    <video width="600" controls>
+    <source src="{{ url_for('static', filename='videos/rec.mp4') }}" type="video/mp4">   
+    </video>
+
+    <br><br>
+    {% endblock %}
