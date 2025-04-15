@@ -22,7 +22,7 @@ logging.basicConfig(
 
 def create_app() -> Flask:
     # Initialize Flask app
-    app = Flask(__name__)
+    app = Flask(__name__, static_folder='static')
     
     # Load configuration
     app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'default_secret_key')
