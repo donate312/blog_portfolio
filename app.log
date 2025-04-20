@@ -1,0 +1,79 @@
+2025-04-20 12:44:40,645 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 12:44:40,809 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 12:44:40,965 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 12:44:41,361 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 14:45:03,591 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 14:45:03,696 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 14:45:04,277 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 14:45:04,539 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 14:45:07,487 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 14:45:07,532 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 14:45:07,695 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 14:45:07,900 - WARNING - SECRET_KEY is not set in the environment. Using default_secret_key.
+2025-04-20 15:05:11,016 - ERROR - Exception on /post [POST]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 115, in post_blog
+    return redirect(url_for('blog.view_posts'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.post_blog' instead?
+2025-04-20 15:11:00,117 - ERROR - Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 120, in view_posts
+    return render_template('view_posts.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: view_posts.html

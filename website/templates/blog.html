@@ -1,31 +1,18 @@
 {% extends "base.html" %}
 
-{% block title %}Blog{% endblock %}
+{% block title %}Blog Posts{% endblock %}
 
 {% block content %}
 <div class="container mt-4">
-    <h1 class="text-center mb-4">My Blog</h1>
-
-    {% if posts %}
-    <div class="row">
-        {% for post in posts %}
-        <div class="col-md-12 mb-4">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title">{{ post.title }}</h5>
-                    <p class="card-text text-muted">
-                        {{ post.date_posted.strftime('%B %d, %Y') }} by {{ post.author }}
-                    </p>
-                    <p class="card-text">
-                        {{ post.content }} <!-- Display the full content -->
-                    </p>
-                </div>
+    <h1>Blog Posts</h1>
+    {% for post in posts %}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">{{ post.title }}</h2>
+                <p class="card-text">{{ post.content }}</p>
+                <p class="text-muted">By {{ post.author }} on {{ post.date_posted.strftime('%Y-%m-%d') }}</p>
             </div>
         </div>
-        {% endfor %}
-    </div>
-    {% else %}
-    <p class="text-center">No blog posts available yet. Check back soon!</p>
-    {% endif %}
+    {% endfor %}
 </div>
 {% endblock %}

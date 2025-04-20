@@ -1,18 +1,21 @@
 import os
 from os import path
 import logging
-from flask import Flask
+from dotenv import load_dotenv
+from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, current_user
-from flask_migrate import Migrate
+from flask_migrate import Migrate, init, migrate, upgrade
+from sqlalchemy.orm import scoped_session, sessionmaker
 
 # Initialize extensions
 db = SQLAlchemy()
 migrate = Migrate()
+load_dotenv()
 
 # Database configuration
 DB_NAME = "database.db"
-DB_PATH = path.abspath(path.join(path.dirname(__file__), DB_NAME))
+DB_PATH = path.join(path.abspath(path.dirname(__file__)), DB_NAME)
 
 # Configure logging
 logging.basicConfig(
@@ -20,14 +23,17 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
+file_handler = logging.FileHandler('app.log')
+file_handler.setLevel(logging.INFO)
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+logging.getLogger().addHandler(file_handler)
+
 def create_app() -> Flask:
     # Initialize Flask app
     app = Flask(__name__)
     
     # Load configuration
     app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'default_secret_key')
-    if not os.getenv('SECRET_KEY'):
-        logging.warning("SECRET_KEY is not set in the environment. Using default_secret_key.")
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_PATH}'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
@@ -38,8 +44,10 @@ def create_app() -> Flask:
     # Register blueprints
     from .views import views
     from .auth import auth
+    from .views import blog
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
+    app.register_blueprint(blog)
     
     # Import models and create database
     from .models import User, Note
@@ -54,21 +62,23 @@ def create_app() -> Flask:
     def load_user(id: str):
         return User.query.get(int(id))
     
-    # make current_user available in all templates
+    # Make current_user available in all templates
     @app.context_processor
     def inject_user():
         return dict(user=current_user)
 
+    @app.errorhandler(404)
+    def page_not_found(e):
+        return render_template('404.html'), 404
+
     return app
 
 def create_database(app: Flask):
-    with app.app_context():
-        db_path = path.join('website', DB_NAME)
-        if not path.exists(db_path):
-            try:
-                from flask_migrate import upgrade
-                upgrade()  # Apply migrations
-                logging.info(f'Database created and migrations applied at {db_path}')
-            except Exception as e:
-                logging.error(f'Error applying migrations: {e}')
-                raise RuntimeError(f"Failed to apply migrations: {e}")
+    try:
+        with app.app_context():
+            if not path.exists(DB_PATH):
+                db.create_all()
+                logging.info(f'Database created at {DB_PATH}')
+    except Exception as e:
+        logging.error(f'Error creating database: {e}')
+        raise RuntimeError(f"Failed to create database: {e}")

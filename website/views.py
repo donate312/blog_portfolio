@@ -1,13 +1,15 @@
 from flask import Blueprint, render_template, request, flash, jsonify, redirect, url_for
 from flask_login import login_required, current_user
-from .models import Note
+from .models import Note, BlogPost
 from . import db
+from .forms import BlogPostForm
 import json
 import os
 import logging
 from datetime import datetime
 
 views = Blueprint('views', __name__)
+blog = Blueprint('blog', __name__)
 
 logging.basicConfig(level=logging.INFO)
 
@@ -40,7 +42,7 @@ def home():
     return render_template("home.html", user=current_user)
 
 @views.route('/blog')
-def blog():
+def view_blog():
     # Example blog posts (replace with database query)
     posts = [
         {
@@ -93,3 +95,26 @@ def certs():
     certs_folder = os.path.join(os.getcwd(), 'static', 'images')
     certs_list = list_files_in_directory(certs_folder)
     return render_template('certs.html', images=certs_list, user=None)
+
+
+
+@blog.route('/post', methods=['GET', 'POST'])
+def post_blog():
+    print("POST route hit!")  # Debug statement
+    form = BlogPostForm()
+    if form.validate_on_submit():
+        print("Form validated!")  # Debug statement
+        new_post = BlogPost(
+            title=form.title.data,
+            content=form.content.data,
+            author=form.author.data
+        )
+        db.session.add(new_post)
+        db.session.commit()
+        flash('Blog post created successfully!', category='success')
+        return redirect(url_for('blog.view_posts'))
+    return render_template('post_blog.html', form=form)
+
+@blog.route('/view_posts')
+def view_posts():
+    return render_template('view_posts.html')

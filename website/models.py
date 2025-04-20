@@ -15,9 +15,9 @@ class User(db.Model, UserMixin):
     first_name = db.Column(db.String(150))
     notes = db.relationship('Note')
 
-#class BlogPost(db.Model):
-#    id = db.Column(db.Integer, primary_key=True)
-#    title = db.Column(db.String(150), nullable=False)
-#    content = db.Column(db.Text, nullable=False)
-#    author = db.Column(db.String(150), nullable=False)
-#    date_posted = db.Column(db.DateTime(timezone=True), default=func.now())
+class BlogPost(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(150), nullable=False)
+    content = db.Column(db.Text, nullable=False)
+    author = db.Column(db.String(150), nullable=False)
+    date_posted = db.Column(db.DateTime(timezone=True), default=func.now())
