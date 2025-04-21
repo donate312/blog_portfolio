@@ -7,10 +7,12 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, current_user
 from flask_migrate import Migrate, init, migrate, upgrade
 from sqlalchemy.orm import scoped_session, sessionmaker
+from flask_wtf.csrf import CSRFProtect, generate_csrf
 
 # Initialize extensions
 db = SQLAlchemy()
 migrate = Migrate()
+csrf = CSRFProtect()
 load_dotenv()
 
 # Database configuration
@@ -40,6 +42,8 @@ def create_app() -> Flask:
     # Initialize extensions
     db.init_app(app)
     migrate.init_app(app, db)
+    CSRFProtect(app)  # Initialize CSRF protection
+    csrf.init_app(app)  # Ensure CSRF protection is applied
     
     # Register blueprints
     from .views import views
@@ -71,6 +75,11 @@ def create_app() -> Flask:
     def page_not_found(e):
         return render_template('404.html'), 404
 
+   
+    @app.context_processor
+    def inject_csrf_token():
+        return dict(csrf_token=generate_csrf())
+    
     return app
 
 def create_database(app: Flask):
@@ -82,3 +91,4 @@ def create_database(app: Flask):
     except Exception as e:
         logging.error(f'Error creating database: {e}')
         raise RuntimeError(f"Failed to create database: {e}")
+    

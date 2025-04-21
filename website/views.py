@@ -41,28 +41,7 @@ def home():
 
     return render_template("home.html", user=current_user)
 
-@views.route('/blog')
-def view_blog():
-    # Example blog posts (replace with database query)
-    posts = [
-        {
-            'id': 1,
-            'title': 'My First Blog Post',
-            'content': 'This is the content of my first blog post. It’s a great start!',
-            'author': 'John Doe',
-            'date_posted': datetime(2025, 4, 1)
-        },
-        {
-            'id': 2,
-            'title': 'Learning Flask',
-            'content': 'Flask is a lightweight web framework for Python. Here’s what I’ve learned so far...',
-            'author': 'Jane Smith',
-            'date_posted': datetime(2025, 4, 5)
-        }
-    ]
-    return render_template('blog.html', posts=posts)
-
-@views.route('/images')
+views.route('/images')
 @login_required
 def images():
     image_folder = os.path.join(os.getcwd(), 'static', 'images')
@@ -99,22 +78,34 @@ def certs():
 
 
 @blog.route('/post', methods=['GET', 'POST'])
-def post_blog():
-    print("POST route hit!")  # Debug statement
+@login_required
+def create_post():
     form = BlogPostForm()
     if form.validate_on_submit():
-        print("Form validated!")  # Debug statement
         new_post = BlogPost(
             title=form.title.data,
             content=form.content.data,
-            author=form.author.data
+            author=current_user.id
         )
         db.session.add(new_post)
         db.session.commit()
         flash('Blog post created successfully!', category='success')
         return redirect(url_for('blog.view_posts'))
-    return render_template('post_blog.html', form=form)
+    return render_template('create_post.html', form=form)
 
 @blog.route('/view_posts')
 def view_posts():
-    return render_template('view_posts.html')
+    # Fetch all blog posts from the database
+    posts = BlogPost.query.order_by(BlogPost.id.desc()).all()
+    return render_template('view_posts.html', posts=posts)
+
+@blog.route('/delete_post/<int:post_id>', methods=['POST'])
+@login_required
+def delete_post(post_id):
+    post = BlogPost.query.get_or_404(post_id)
+
+    # Delete the post directly without checking the author
+    db.session.delete(post)
+    db.session.commit()
+    flash('Post deleted successfully!', category='success')
+    return redirect(url_for('blog.view_posts'))

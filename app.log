@@ -77,3 +77,1631 @@ Traceback (most recent call last):
   File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
     raise TemplateNotFound(template)
 jinja2.exceptions.TemplateNotFound: view_posts.html
+2025-04-20 15:36:00,286 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-21 03:20:48,889 - ERROR - Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 120, in view_posts
+    return render_template('view_posts.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: view_posts.html
+2025-04-21 03:36:19,799 - ERROR - Exception on /post [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 95, in post_blog
+    return render_template('post_blog.html', form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/post_blog.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.images' instead?
+2025-04-21 03:42:48,527 - ERROR - Exception on /post [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 95, in post_blog
+    return render_template('post_blog.html', form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/post_blog.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.images' instead?
+2025-04-21 03:43:10,942 - ERROR - Exception on /post [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 95, in post_blog
+    return render_template('post_blog.html', form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/post_blog.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 03:47:15,634 - ERROR - Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 101, in view_posts
+    return render_template('view_posts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/view_posts.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 03:48:04,030 - ERROR - Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 101, in view_posts
+    return render_template('view_posts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/view_posts.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 03:48:11,177 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 03:48:34,719 - ERROR - Exception on /post [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 95, in post_blog
+    return render_template('post_blog.html', form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/post_blog.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 03:48:37,092 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 03:49:26,313 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 03:50:48,435 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 03:59:44,522 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 03:59:45,986 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 04:00:25,354 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 04:00:36,288 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 04:00:38,286 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 04:01:18,503 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 04:01:20,662 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 04:06:34,353 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'blog.view_blog' instead?
+2025-04-21 04:08:50,180 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 29, in home
+    return render_template("home.html", user=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'blog.view_blog' instead?
+2025-04-21 04:48:48,344 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 29, in home
+    return render_template("home.html", user=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'blog.view_blog' instead?
+2025-04-21 06:46:51,645 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 29, in home
+    return render_template("home.html", user=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'blog.view_blog' instead?
+2025-04-21 06:50:45,711 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'blog.view_blog' instead?
+2025-04-21 06:51:05,341 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 33, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('views.view_blog') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 06:57:25,059 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 94, in top-level template code
+    <!--<a class="dropdown-item" href="{{ url_for('views.view_blog') }}">View Blog</a>-->
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 06:57:27,951 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 94, in top-level template code
+    <!--<a class="dropdown-item" href="{{ url_for('views.view_blog') }}">View Blog</a>-->
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 07:01:00,050 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 139, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 29, in block 'content'
+    <a href="{{ url_for('views.view_blog') }}" class="btn btn-info btn-lg">Learn More About Me</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 07:04:08,595 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 138, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 29, in block 'content'
+    <a href="{{ url_for('views.view_blog') }}" class="btn btn-info btn-lg">Learn More About Me</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 07:04:28,200 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 138, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 29, in block 'content'
+    <a href="{{ url_for('views.view_blog') }}" class="btn btn-info btn-lg">Learn More About Me</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'views.view_blog'. Did you mean 'views.delete_note' instead?
+2025-04-21 07:15:52,961 - INFO - Note 1 deleted by user 1
+2025-04-21 07:15:55,082 - INFO - Note 2 deleted by user 1
+2025-04-21 07:15:57,428 - INFO - Note 3 deleted by user 1
+2025-04-21 07:20:53,960 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 25, in template
+    {% block content %}
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2025-04-21 07:21:44,743 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 26, in template
+    {% block content %}
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2025-04-21 07:21:46,551 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 771, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 26, in template
+    {% block content %}
+jinja2.exceptions.TemplateAssertionError: block 'content' defined twice
+2025-04-21 08:25:43,105 - INFO - The CSRF token is missing.
+2025-04-21 08:33:06,635 - ERROR - Exception on /post [POST]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 88, in create_post
+    author=current_user.username  # Assuming `username` exists in your user model
+           ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'username'
+2025-04-21 08:38:31,961 - ERROR - Exception on /post [POST]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.ProgrammingError: Error binding parameter 3: type 'LocalProxy' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 91, in create_post
+    db.session.commit()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 599, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 3: type 'LocalProxy' is not supported
+[SQL: INSERT INTO blog_post (title, content, author, date_posted) VALUES (?, ?, ?, CURRENT_TIMESTAMP) RETURNING id, date_posted]
+[parameters: ('delete posts', 'create delete button', <User 1>)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-04-21 09:09:53,911 - INFO - The CSRF token is missing.
+2025-04-21 09:10:03,582 - INFO - The CSRF token is missing.
+2025-04-21 09:18:53,839 - INFO - The CSRF token is missing.
+2025-04-21 09:19:17,362 - INFO - The CSRF token is missing.
+2025-04-21 09:21:57,785 - INFO - The CSRF token is missing.
+2025-04-21 09:37:54,066 - INFO - The CSRF token is missing.
+2025-04-21 09:38:56,803 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 43, in login
+    return render_template("login.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 127, in _render
+    app.update_template_context(context)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 530, in update_template_context
+    context.update(self.ensure_sync(func)())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/__init__.py", line 80, in inject_csrf_token
+    return dict(csrf_token=csrf.generate_csrf())
+                           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'CSRFProtect' object has no attribute 'generate_csrf'
+2025-04-21 09:44:11,467 - ERROR - Exception on /+CSCOE+/logon.html [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/__init__.py", line 75, in page_not_found
+    return render_template('404.html'), 404
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 127, in _render
+    app.update_template_context(context)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 530, in update_template_context
+    context.update(self.ensure_sync(func)())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/__init__.py", line 80, in inject_csrf_token
+    return dict(csrf_token=csrf.generate_csrf())
+                           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'CSRFProtect' object has no attribute 'generate_csrf'
+2025-04-21 09:44:11,999 - ERROR - Exception on /admin/dm-launcher.msi [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/__init__.py", line 75, in page_not_found
+    return render_template('404.html'), 404
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 127, in _render
+    app.update_template_context(context)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 530, in update_template_context
+    context.update(self.ensure_sync(func)())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/__init__.py", line 80, in inject_csrf_token
+    return dict(csrf_token=csrf.generate_csrf())
+                           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'CSRFProtect' object has no attribute 'generate_csrf'
+2025-04-21 09:44:12,476 - ERROR - Exception on /admin/public/index.html [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 802, in handle_user_exception
+    return self.handle_http_exception(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 777, in handle_http_exception
+    return self.ensure_sync(handler)(e)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/__init__.py", line 75, in page_not_found
+    return render_template('404.html'), 404
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 127, in _render
+    app.update_template_context(context)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 530, in update_template_context
+    context.update(self.ensure_sync(func)())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/__init__.py", line 80, in inject_csrf_token
+    return dict(csrf_token=csrf.generate_csrf())
+                           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'CSRFProtect' object has no attribute 'generate_csrf'
+2025-04-21 09:44:13,501 - ERROR - Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 100, in view_posts
+    return render_template('view_posts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 127, in _render
+    app.update_template_context(context)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 530, in update_template_context
+    context.update(self.ensure_sync(func)())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/__init__.py", line 80, in inject_csrf_token
+    return dict(csrf_token=csrf.generate_csrf())
+                           ^^^^^^^^^^^^^^^^^^
+AttributeError: 'CSRFProtect' object has no attribute 'generate_csrf'
+2025-04-21 09:45:30,643 - INFO - The CSRF token is missing.
+2025-04-21 09:46:31,529 - INFO - The CSRF token is missing.
