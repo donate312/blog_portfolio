@@ -1,5 +1,10 @@
-{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content%}
+{% extends "base.html" %} 
+{% block title %}Login{% endblock %} 
+{% block content %}
 <form method="POST">
+    <!-- Include CSRF Token -->
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
     <h3 align="center">Login</h3>
     <div class="form-group">
         <label for="email">Email Address</label>
@@ -27,9 +32,9 @@
 
 <hr class="my-4">
 
-    <!-- Continue as Guest Option -->
-    <div class="text-center">
-        <p>Or, For Hiring Managers and/or Recruiters:</p>
-        <a href="{{ url_for('views.home') }}" class="btn btn-secondary">Continue as Guest</a>
-    </div>
+<!-- Continue as Guest Option -->
+<div class="text-center">
+    <p>Or, For Hiring Managers and/or Recruiters:</p>
+    <a href="{{ url_for('views.home') }}" class="btn btn-secondary">Continue as Guest</a>
+</div>
 {% endblock %}
