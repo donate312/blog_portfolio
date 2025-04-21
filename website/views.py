@@ -41,19 +41,12 @@ def home():
 
     return render_template("home.html", user=current_user)
 
-views.route('/images')
+@views.route('/images')
 @login_required
 def images():
     image_folder = os.path.join(os.getcwd(), 'static', 'images')
     image_list = list_files_in_directory(image_folder)
     return render_template("images.html", images=image_list, user=current_user)
-
-#@views.route('/videos')
-#@login_required
-#def videos():
-#    video_folder = os.path.join(os.getcwd(), 'static', 'videos')
-#    video_list = list_files_in_directory(video_folder)
-#    return render_template("videos.html", video=video_list, user=current_user)
 
 @views.route('/delete-note', methods=['POST'])
 def delete_note():
@@ -74,8 +67,6 @@ def certs():
     certs_folder = os.path.join(os.getcwd(), 'static', 'images')
     certs_list = list_files_in_directory(certs_folder)
     return render_template('certs.html', images=certs_list, user=None)
-
-
 
 @blog.route('/post', methods=['GET', 'POST'])
 @login_required
@@ -99,13 +90,12 @@ def view_posts():
     posts = BlogPost.query.order_by(BlogPost.id.desc()).all()
     return render_template('view_posts.html', posts=posts)
 
-@blog.route('/delete_post/<int:post_id>', methods=['POST'])
+@blog.route('/delete_post/<int:post_id>', methods=['DELETE'])
 @login_required
 def delete_post(post_id):
     post = BlogPost.query.get_or_404(post_id)
 
-    # Delete the post directly without checking the author
+    # Delete the post
     db.session.delete(post)
     db.session.commit()
-    flash('Post deleted successfully!', category='success')
-    return redirect(url_for('blog.view_posts'))
+    return '', 204  # Return a 204 No Content response

@@ -13,15 +13,35 @@
             <h6 class="card-subtitle mb-2 text-muted">By {{ post.author }} on {{ post.date_posted.strftime('%Y-%m-%d') }}</h6>
             <p class="card-text">{{ post.content }}</p>
             <!-- Delete Button -->
-            <form method="POST" action="{{ url_for('blog.delete_post', post_id=post.id) }}" style="display: inline;">
-                {{ csrf_token() }}
-                <input type="hidden" name="_method" value="DELETE">
-                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-            </form>
+            <button class="btn btn-danger btn-sm" onclick="deletePost({{ post.id }})">Delete</button>
         </div>
     </div>
     {% else %}
     <p>No blog posts available.</p>
     {% endfor %}
 </div>
+
+<script>
+function deletePost(postId) {
+    fetch(`/delete_post/${postId}`, {
+        method: 'DELETE',
+        headers: {
+            'X-CSRFToken': '{{ csrf_token() }}', // Include the CSRF token
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Post deleted successfully!');
+            location.reload(); // Reload the page after deletion
+        } else {
+            alert('Failed to delete post.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred.');
+    });
+}
+</script>
 {% endblock %}
