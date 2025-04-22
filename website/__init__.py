@@ -6,7 +6,6 @@ from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, current_user
 from flask_migrate import Migrate, init, migrate, upgrade
-from sqlalchemy.orm import scoped_session, sessionmaker
 from flask_wtf.csrf import CSRFProtect, generate_csrf
 
 # Initialize extensions

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Post{% endblock %}
+
+{% block content %}
+<div class = "my-4 text-center">
+    <h1>Edit Post</h1>
+</div>
+<form method="POST">
+    {{ form.hidden_tag() }}
+
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <div class="form-group">
+        {{ form.title.label(class="form-label") }}
+        {{ form.title(class="form-control") }}
+        <label for="title">Title</label>
+        <input
+            type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            value="{{ post.title }}"
+            required
+        />
+    </div>
+    <div class="form-group">
+        {{ form.content.label(class="form-label") }}
+        {{ form.content(class="form-control") }}
+        <label for="content">Content</label>
+        <textarea
+            class="form-control"
+            id="content"
+            name="content"
+            rows="5"
+            required
+        >{{ post.content }}</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Update Post</button>
+    <a href="{{ url_for('blog.view_posts') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}

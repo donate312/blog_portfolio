@@ -99,3 +99,23 @@ def delete_post(post_id):
     db.session.delete(post)
     db.session.commit()
     return '', 204  # Return a 204 No Content response
+
+@blog.route('/edit_post/<int:post_id>', methods=['GET', 'POST'])
+@login_required
+def edit_post(post_id):
+    post = BlogPost.query.get_or_404(post_id)
+
+    # Ensure the current user is the author of the post
+    if post.author != current_user.id:
+        flash('You are not authorized to edit this post.', category='error')
+        return redirect(url_for('blog.view_posts'))
+
+    if request.method == 'POST':
+        # Update the post with the new data
+        post.title = request.form.get('title')
+        post.content = request.form.get('content')
+        db.session.commit()
+        flash('Post updated successfully!', category='success')
+        return redirect(url_for('blog.view_posts'))
+
+    return render_template('edit_post.html', post=post)

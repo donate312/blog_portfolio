@@ -1746,3 +1746,14 @@ Traceback (most recent call last):
     return getattr(obj, attribute)
            ^^^^^^^^^^^^^^^^^^^^^^^
 jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-21 18:23:59,475 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-21 19:04:03,384 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-21 20:03:32,459 - INFO - The CSRF token is missing.
+2025-04-21 20:03:36,813 - INFO - The CSRF token is missing.
+2025-04-21 20:04:25,709 - INFO - The CSRF token is missing.
+2025-04-21 20:11:14,388 - INFO - The CSRF token is missing.
+2025-04-21 22:21:09,541 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-21 23:31:25,509 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-22 01:35:05,200 - INFO - The CSRF token is missing.
+2025-04-22 12:33:45,599 - INFO - The CSRF token is missing.
+2025-04-22 17:44:07,973 - INFO - The CSRF token has expired.
