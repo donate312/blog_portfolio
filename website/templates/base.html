@@ -170,7 +170,22 @@
       window.location.href = "/";
     });
     }
-    </script>        
-  {% endblock %}    
+    </script>          
   </body>
 </html>
+{% block scripts %}
+<script>
+    setInterval(() => {
+        fetch('/refresh-csrf')
+            .then(res => res.json())
+            .then(data => {
+                const csrfInput = document.querySelector('input[name="csrf_token"]');
+                if (csrfInput) {
+                    csrfInput.value = data.csrf_token;
+                }
+            });
+    }, 10 * 60 * 1000); // every 10 minutes
+</script>
+{% endblock %}
+
+ {% endblock %}   

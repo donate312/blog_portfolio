@@ -2,11 +2,12 @@ import os
 from os import path
 import logging
 from dotenv import load_dotenv
-from flask import Flask, render_template
+from flask import Flask, render_template, session
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, current_user
 from flask_migrate import Migrate, init, migrate, upgrade
 from flask_wtf.csrf import CSRFProtect, generate_csrf
+from datetime import timedelta
 
 # Initialize extensions
 db = SQLAlchemy()
@@ -74,10 +75,19 @@ def create_app() -> Flask:
     def page_not_found(e):
         return render_template('404.html'), 404
 
+    @app.before_request
+    def make_session_permanent():
+        session.permanent = True
+        app.permanent_session_lifetime = timedelta(days=7)
    
     @app.context_processor
     def inject_csrf_token():
         return dict(csrf_token=generate_csrf())
+    
+    @app.route("/refresh-csrf", methods=["GET"])
+    def refresh_csrf():
+        csrf_token = generate_csrf()
+        return {'csrf_token': generate_csrf}, 200
     
     return app
 
