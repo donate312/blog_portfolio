@@ -1757,3 +1757,1548 @@ jinja2.exceptions.UndefinedError: 'form' is undefined
 2025-04-22 01:35:05,200 - INFO - The CSRF token is missing.
 2025-04-22 12:33:45,599 - INFO - The CSRF token is missing.
 2025-04-22 17:44:07,973 - INFO - The CSRF token has expired.
+2025-04-22 20:22:21,494 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 43, in login
+    return render_template("login.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 110, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 5, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-22 20:22:30,006 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 43, in login
+    return render_template("login.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 110, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 5, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-22 20:22:37,305 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 43, in login
+    return render_template("login.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 110, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 5, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-22 20:22:41,077 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 43, in login
+    return render_template("login.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 110, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 5, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-22 20:35:33,555 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 20:54:10,516 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 21:04:10,488 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 21:14:10,542 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 21:24:10,607 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 21:34:10,664 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 21:44:10,627 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 21:54:10,630 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 22:04:10,661 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 22:14:11,339 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 22:24:10,642 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 22:34:10,664 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 22:44:54,655 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 22:54:54,553 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 23:04:54,590 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 23:14:54,607 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 23:24:54,624 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 23:34:54,688 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 23:44:55,168 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-22 23:54:54,646 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 00:04:54,694 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 00:14:55,556 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 00:24:54,822 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 00:34:54,763 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 00:44:54,864 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 00:54:54,814 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 01:04:54,879 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 01:14:54,742 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 01:24:54,796 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 01:34:54,886 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 01:44:54,852 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 01:54:54,918 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 02:04:54,879 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 02:14:54,802 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 02:24:54,890 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 02:26:03,353 - INFO - The CSRF token is missing.
+2025-04-23 02:26:04,041 - INFO - The CSRF token is missing.
+2025-04-23 02:34:54,983 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-23 16:04:48,041 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-23 23:40:35,237 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-23 23:50:36,445 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-24 00:00:36,465 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-24 00:10:37,009 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-24 00:25:02,892 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-24 00:35:02,907 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-24 00:38:58,288 - ERROR - Exception on /refresh-csrf [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 920, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 939, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1231, in make_response
+    rv = self.json.response(rv)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 214, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 179, in dumps
+    return json.dumps(obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/json/provider.py", line 121, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type function is not JSON serializable
+2025-04-24 03:43:24,952 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.126:8080
+2025-04-24 03:43:24,953 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-24 03:43:24,959 - INFO -  * Restarting with stat
+2025-04-24 03:43:26,551 - WARNING -  * Debugger is active!
+2025-04-24 03:43:26,554 - INFO -  * Debugger PIN: 115-437-978
+2025-04-24 03:43:45,849 - INFO - 192.168.0.126 - - [24/Apr/2025 03:43:45] "GET / HTTP/1.1" 200 -
+2025-04-24 03:43:46,503 - INFO - 192.168.0.126 - - [24/Apr/2025 03:43:46] "GET /static/style.css HTTP/1.1" 200 -
+2025-04-24 03:43:46,514 - INFO - 192.168.0.126 - - [24/Apr/2025 03:43:46] "GET /static/images/LPP4.png HTTP/1.1" 200 -
+2025-04-24 03:43:46,615 - INFO - 192.168.0.126 - - [24/Apr/2025 03:43:46] "GET /static/index.js HTTP/1.1" 200 -
+2025-04-24 03:43:47,063 - INFO - 192.168.0.126 - - [24/Apr/2025 03:43:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-24 03:44:30,685 - INFO - 192.168.0.126 - - [24/Apr/2025 03:44:30] "GET /login HTTP/1.1" 200 -
+2025-04-24 03:44:30,777 - INFO - 192.168.0.126 - - [24/Apr/2025 03:44:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-24 03:44:30,790 - INFO - 192.168.0.126 - - [24/Apr/2025 03:44:30] "[36mGET /static/index.js HTTP/1.1[0m" 304 -
+2025-04-24 03:44:33,874 - INFO - 192.168.0.126 - - [24/Apr/2025 03:44:33] "GET / HTTP/1.1" 200 -
+2025-04-24 03:44:33,979 - INFO - 192.168.0.126 - - [24/Apr/2025 03:44:33] "[36mGET /static/images/LPP4.png HTTP/1.1[0m" 304 -
+2025-04-24 03:44:33,989 - INFO - 192.168.0.126 - - [24/Apr/2025 03:44:33] "[36mGET /static/index.js HTTP/1.1[0m" 304 -
+2025-04-24 03:44:34,004 - INFO - 192.168.0.126 - - [24/Apr/2025 03:44:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-24 13:02:57,270 - INFO - The CSRF token is missing.
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.126:8080
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 115-437-978
+192.168.0.126 - - [25/Apr/2025 01:24:34] "GET /refresh-csrf HTTP/1.1" 200 -
+192.168.0.126 - - [25/Apr/2025 01:34:34] "GET /refresh-csrf HTTP/1.1" 200 -
+192.168.0.100 - - [25/Apr/2025 01:36:30] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+192.168.0.100 - - [25/Apr/2025 01:36:30] "[31m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03nl;PN:\x89â\x08÷M¦-¤7\x01S\x90\x9d9\x08«K÷ß\x98B\x12Ô\x83E¾ \x9d¾\x16\x96U\x8fÊ\x80\x00lí2D©m:\x12:ä\x9d\x09[ê\x15\x8bû\x0b\x130\x98\x8ak\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s\x1a\x1a\x00\x00\x00\x17\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x003\x04ï\x04íZZ\x00\x01\x00\x11ì\x04À»\x10¾+\x96\x17\x80Ø·\x9cÜdá,fÁÔ©\x104s"à\x7f\x8f\x05GðÈ]¶¶\x81|\x8c*\x80pÊ\x96\x82{\x8cõPÍ\x07¼\x8fg\x81«\x90\x14\x0efcô\x1c¹\x9aq^\x8d¹(\x12°Gjb\x87·@f\x15\x82\x86\x9fklV\x9c4M#\x9eü7 ÂPoµ\x1c\x12\x1eÑ\x85£\x18N\x9cX\x9cÀ\x90@æ0vv±L\x0b\x87rÏ\x94OÀÓÊßµ°Ý{\x82K¤yÓ\x0c\x95\x88Ð\x1f-Ù\x0e\x84#<ycFð\x10fá¦\x10?¤bõ%v<\x02\x06¿d9\x06'cGw\x92\x09¸s%I%ëe²´|CzzÎñÅsYÐ·Ý|\x1c*W¥Lìa¿æ,ça³!v=P\x11$sh<ÀènSGJ¸×0!\x98\x02¼±~¯ª\x00D\x9a\x8c5\x88³Ñ\x05hq"\x8cÂy\x95yzE¦\x12=e¼Rl\x01\x9c¼vÉAÆ3\x01ÔtÆá\x8a6\x17±8ä\x00â\x948¥rM\x03×\x9c´I!ý\x8c\x9fvë¦°IU\x1c:Ê·Â\x93£j¡\x80\x0bf6,6\x05\x18°áV;Óã\x15_º\x07Mç\x9e§zÎ$Vc®X#æ»QPff\x1b´±/E¬\x7fö\x14Eê"øTO\x06df\x07\x0c\x85"ò?Í\x92~¶ÇE\x9fY\x07\x8f\x12\x99a;\x11-õËÊ\x1a\x94\x92Ëx§årXZ´và++9\x1fë\x08\x04`1\x05\x9e\x00\x18Ø÷Í\x0be<[é\x88êòEóÜ-S\x16¶K3PG\x83 Wz\x8c-\x8aT\x94\x82\x9e{$.$g\x90)\x0b¯Bù\x04ã\x8bª\x9fU?\x04\x1ch\x98h\x96\x15µ¡°\x0cºÅÓ ûx/\x0b\x06y¥¡n¶²L¶:¡]\x94¸ý¹\x8am¨ÊM»SÉ\x9a\x19ëç3t\x0c¼$°WÚ\x8c²\x02¥4ÉK\x91Z\x11u1\x86ÁX¨~P ("\x15Q¥ðÉ\x8ac£¹×½\x1fy\x04Mz\x94-u:\x99t­hê%\x944\x8a\x1fK¼Î\x07h6À$\x9e³£kG\x1aÊd\x1e\x0fû¶\x91VW)Ù\x82"J"8\x91$\x1eì\x949[\x7föØ\x01\x91Ú?s¹4­\x06¦\x1e\x19cn\x05yoµ\x0cQf\\ké\x7f¤ËqÝ\x03\x0c\x96i/º\x12j^\x91ªµ4F\x17£dgJMò·\x9dÈ\x02\x8còw\x09\x18ê9ÄptzÇ=Ü£ÃV\\UÂªqß5w\x8d4W\x84\x09d\x09J¡²\x00:J£\x96òÆ\x95]Ëy\x0d r\x84ÙÅ\x99¶\x90\x88ôY\x96)\x81CG\x93\x87µ\x16\x1cZ£»§e ¶S"éjkLs\x87t\x02Ø ¿dÈ³æZ\x08\x1a\x04!zõ­\x19º9É0ÌsÖ(ú÷\x7fÅC'N@\x0bûVÊ\x94\x13'1¶%\x8d\x12\x0bþÌÎ\x09\x8by®§Y\x86¡\x87oT\x84Öû {¹\x0c)øÊ4LÅY¸L}\x9c\x16¼ÂpöB2\x9fW\x8cøtw\x16Ò\x06qÀ\x8fÁT²zJ,Dê\x8f#W9\x94\x10\x05\x91y8Hû\x8dk\x02ÎÍÁ·±\x13\x17\x87\x992\x80Y\x00Å\x16\x7f\x93\x89I=µ01S#·\x90\x95\x07º½SlÆ\x0f\x040h\x1bBE+©¼H\x1dá¬\x83µ\x8a\x80Þ\x12M\x0fXU\x11Ú\x13ag\x9eRz \x15\x08\x8b9§À\x94w'N\x91\x11·QX@#ÎÁ \x83ºW\x0f°\x07&ÄÐ\x13³\x99N\x1fH:Úc\x86Ý|s\x05\x11j\x18\x05\x11FÓ\x9dm8 B\x18Ç\x16\x8cÍAâ\x8fÿ\x19²å\x83D\x89Çrr\x06w¥ô\x1fev7AôÅ\x99\x1a~Ûë\x1cw\x81n¶#²²\x01_¦\x83\x02Z\x18;­\x1a¼\x8bê/{ü\x89\x10\x9bS`Ä\x0f\x85ÕÃùe\x88rev6Â\x95ð\x14)È%\x952ñq\x17\x9a\x17\x8a\x0c4¬\x86^\x85¬\x98\x12\x0bmñ\x95 :ð¯Ù\x93Ï(#BÒ8F&\x98\x8d2*Aøpj2`>\x0b\x80¯.\x04¹Å¡¹.ª¿\x83\x83ª\x89{\x90Í¨²µò\x0e\x95Ëhï°OÌ'»·°(A×ÿ®\x82Uëé,Yi\x08&'ó¨6ÍÛÂR\x03j\x19\x07®n¥«Lö\x1be\x9cª\x13\x1b\x1b\x1fó¸©,\x04ãjºan_ \x9cákêFh¼\x1c\x17X\x00\x1d\x00 \x00\x8eúØ8°Zÿ§ËüÆÀh\x92J\x83¯~9ìÞÖ\x97Î\x94Ì\x1dTÕ_E\x00\x0b\x00\x02\x01\x00\x00-\x00\x02\x01\x01ÿ\x01\x00\x01\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00[0m" 400 -
+192.168.0.100 - - [25/Apr/2025 01:36:30] code 400, message Bad request version ('Î\x00')
+192.168.0.100 - - [25/Apr/2025 01:36:30] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\x8akW\x98\x05ëh|GÑíD¡\x8fNË\x16C\x9cè´\x14\x86\x83\x98\x02\x07LW¸Å» Á\x1fW\x1eï©õ&y\x87ê&`©Å¯V±\x9e÷,Ç\x0d\x89\x8fV¬}UÞ\x1fÎ\x00 [0m" 400 -
+192.168.0.100 - - [25/Apr/2025 01:37:02] code 400, message Bad request version ('Ù')
+192.168.0.100 - - [25/Apr/2025 01:37:02] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03j½\x92vOô\x0e¡[I\x88j r\x07ø\x98\x93x~ú\x0bÚ?9\x0dk¥©$]e \x1c°!à\x1cé\x1c/\x8aÿ\x03ttªA\x0bçÖ\x1aÇ\x9c7?Ï\x87ì \\x¾sS\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ªª\x00\x00DÍ\x00\x05\x00\x03\x02h2\x003\x04ï\x04íÚÚ\x00\x01\x00\x11ì\x04ÀÇÕd]\x83{\x09+a\x02¨ÍQÈ\x9bI\x1b~á¡nå\x12)dØC]ì>=Ù²`\x01Ð\x80×h,ëR.1¦\x13¢Â§·*CY9Å¶qãL\x10¡\\°4\x1c-4©Îü¹\x1c\x1eÊ¡\x0cÇT\x1fj¿Þr·e«|8¢\x1c¬\x02\x9bél­)»\x86r¡b(a"\x1220b;\x8aÞ¼/\x9eÛJ\x9càYÓ\x958\x92*±\x07\x84]íèK\x8e\x0b\x0d&3}Ow5µ×\x8e&²Pä\x01Ì½«Y°Cf§\x93p`ç¬¤¢\x89¨,Êß\x86ËÐ![h£\x8c\x12\x82?eD$Û"!s\x89r´¤Å-\x09:ý¤##¤%Àº»K\x95É}\x90\x83£iE\x17´>p{v\x9fÆE\x96Ö\x02\x01*[¹õ\x82þ\x89>±\x13\x81(ëÈ¢\x13\x91ÈY¬\x81Bu¶ëÂ\x9a\x8bkQ\x80\x1cÙ[0m" 400 -
+192.168.0.100 - - [25/Apr/2025 01:37:02] code 400, message Bad request version (':Ó¾¤í\x90õ^õ\x956bÕ\x00')
+192.168.0.100 - - [25/Apr/2025 01:37:02] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03Íc½~\x11»Ð\x03¹ÐÿÕi²B~\x83BÁ\x09JW\x90\x88\x99Å¾øF\x81\x04l >\x14"\x1dº±Ó\x13GúP\x98\x1dï5[J+\x09:Ó¾¤í\x90õ^õ\x956bÕ\x00 [0m" 400 -
+ * Detected change in '/home/david/Desktop/portfolio/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 115-437-978
+Directory /home/david/Desktop/portfolio/static/images does not exist.
+Directory /home/david/Desktop/portfolio/static/images does not exist.
+Directory /home/david/Desktop/portfolio/static/images does not exist.
+Directory /home/david/Desktop/portfolio/static/images does not exist.
+The CSRF token is missing.
+The CSRF token is missing.

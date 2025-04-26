@@ -35,8 +35,9 @@
                 <p>I'm at a point in my life where I'm able to focus solely on me and my career. </p>
                 <p>My years of being in the Service Industry has taught me great customer service, communication and conflict resolution skills.</p>
                 <p>I always try to remain humble and ready-to-learn. I work well with others but I flourish when I work alone. I'm adaptable, resilient, and patient.</p>
-                <p>I pride myself in my work ethic. I am loyal to a fault. I'm looking for a company that I can provide value to and in return, I hope to find a company that will invest in me and my future.</p>
-                <p>I believe luck = preparation + opportunity</p>
+                <p>I pride myself in my work ethic. I am loyal to a fault. I'm looking longevity and for a company that I can provide value to and in return, I can become part of the community. I am not looking for a job, I'm looking for a career.</p>
+                <p>I'm believer of Luck = Preparation + Opportunity, Value = Time + Focus(Energy)</p>
+                <p>I remember these fomulas when I find myself distracted, it reminds me of my goals and helps me get back on track.</p>
 
                 <!-- Link to Blog Page -->
                 <div class="my-4 text-center">
@@ -69,6 +70,7 @@
 
             <!-- Add Note Form -->
             <form method="POST">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
                 <textarea name="note" id="note" class="form-control mb-3" placeholder="Write your note here..." rows="3"></textarea>
                 <button type="submit" class="btn btn-primary">Add Note</button>
             </form>
