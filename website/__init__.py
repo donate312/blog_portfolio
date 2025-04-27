@@ -2,7 +2,7 @@ import os
 from os import path
 import logging
 from dotenv import load_dotenv
-from flask import Flask, render_template, session
+from flask import Flask, render_template, session, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, current_user
 from flask_migrate import Migrate, init, migrate, upgrade
@@ -25,9 +25,8 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
-file_handler = logging.FileHandler('app.log')
+file_handler = logging.FileHandler('/home/david/Desktop/portfolio/app.log')  # Use a writable directory
 file_handler.setLevel(logging.INFO)
-file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
 logging.getLogger().addHandler(file_handler)
 
 def create_app() -> Flask:
@@ -87,7 +86,11 @@ def create_app() -> Flask:
     @app.route("/refresh-csrf", methods=["GET"])
     def refresh_csrf():
         csrf_token = generate_csrf()
-        return {'csrf_token': generate_csrf}, 200
+        return jsonify({'csrf_token': csrf_token}), 200
+    
+    file_handler = logging.FileHandler('/home/david/Desktop/portfolio/app.log')  # Use a writable directory
+    file_handler.setLevel(logging.INFO)
+    app.logger.addHandler(file_handler)
     
     return app
 
@@ -100,4 +103,4 @@ def create_database(app: Flask):
     except Exception as e:
         logging.error(f'Error creating database: {e}')
         raise RuntimeError(f"Failed to create database: {e}")
-    
+

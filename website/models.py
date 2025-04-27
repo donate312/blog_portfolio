@@ -6,7 +6,7 @@ class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     data = db.Column(db.String(10000))
     date = db.Column(db.DateTime(timezone=True), default=func.now())
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id',name='fk_note_user_id'))
     
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
@@ -14,10 +14,11 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(150))
     first_name = db.Column(db.String(150))
     notes = db.relationship('Note')
+    posts = db.relationship('BlogPost', backref='post_author', lazy=True)
 
 class BlogPost(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(150), nullable=False)
     content = db.Column(db.Text, nullable=False)
-    author = db.Column(db.String(150), nullable=False)
+    author = db.Column(db.Integer, db.ForeignKey('user.id', name='fk_blogpost_user_id'), nullable=False)
     date_posted = db.Column(db.DateTime(timezone=True), default=func.now())

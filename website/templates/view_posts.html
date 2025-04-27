@@ -3,19 +3,28 @@
 {% block title %}Blog Posts{% endblock %}
 
 {% block content %}
-<h1 class ="text-center py-4">Blog Posts</h1>
+<h1 class="text-center py-4">Blog Posts</h1>
 
 <div class="container">
     {% for post in posts %}
     <div class="card my-3">
-        <div class="card-body">
-            <h5 class="card-title">{{ post.title }}</h5>
-            <h6 class="card-subtitle mb-2 text-muted">By {{ post.author }} on {{ post.date_posted.strftime('%Y-%m-%d') }}</h6>
-            <p class="card-text">{{ post.content }}</p>
-            <!-- Edit Button -->
-            <a href="{{ url_for('blog.edit_post', post_id=post.id) }}" class="btn btn-warning btn-sm">Edit</a>
-            <!-- Delete Button -->
-            <button class="btn btn-danger btn-sm" onclick="deletePost('{{ post.id }}')">Delete</button>
+        <div class="card-header">
+            <!-- Title is clickable to toggle content -->
+            <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#post-{{ post.id }}" aria-expanded="false" aria-controls="post-{{ post.id }}">
+                    {{ post.title }}
+                </button>
+            </h5>
+        </div>
+        <div id="post-{{ post.id }}" class="collapse">
+            <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">By {{ post_author.first_name if post_author else 'Unknown' }} on {{ post.date_posted.strftime('%Y-%m-%d') }}</h6>
+                <p class="card-text">{{ post.content }}</p>
+                <!-- Edit Button -->
+                <a href="{{ url_for('blog.edit_post', post_id=post.id) }}" class="btn btn-warning btn-sm">Edit</a>
+                <!-- Delete Button -->
+                <button class="btn btn-danger btn-sm" onclick="deletePost('{{ post.id }}')">Delete</button>
+            </div>
         </div>
     </div>
     {% else %}
