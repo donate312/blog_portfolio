@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, request, flash, jsonify, redirect,
 from flask_login import login_required, current_user
 from .models import Note, BlogPost
 from . import db
-from .forms import BlogPostForm
+from .forms import BlogPostForm, EditPostForm
 import json
 import os
 import logging
@@ -110,12 +110,14 @@ def edit_post(post_id):
         flash('You are not authorized to edit this post.', category='error')
         return redirect(url_for('blog.view_posts'))
 
-    if request.method == 'POST':
-        # Update the post with the new data
-        post.title = request.form.get('title')
-        post.content = request.form.get('content')
+    form = EditPostForm(obj=post)  # Pre-fill the form with the post data
+
+    if form.validate_on_submit():
+        post.title = form.title.data
+        post.content = form.content.data
         db.session.commit()
         flash('Post updated successfully!', category='success')
         return redirect(url_for('blog.view_posts'))
 
-    return render_template('edit_post.html', post=post)
+
+    return render_template('edit_post.html', form=form, post=post)
