@@ -1,5 +1,7 @@
-from flask import Blueprint, render_template, request, flash, redirect, url_for
-from .models import User
+from flask import Blueprint, render_template, request, flash, redirect, url_for, session
+from uuid import uuid4
+from .forms import LoginForm
+from .models import User, Visitor
 from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from flask_login import login_user, login_required, logout_user, current_user
@@ -28,9 +30,10 @@ def validate_signup_form(email, first_name, password1, password2):
 
 @auth.route('/login', methods=['GET', 'POST'])
 def login():
-    if request.method == 'POST':
-        email = request.form.get('email', '')
-        password = request.form.get('password', '')
+    form = LoginForm()
+    if form.validate_on_submit():
+        email = form.email.data
+        password = form.password.data
 
         user = User.query.filter_by(email=email).first()
         if user and check_password_hash(user.password, password):
@@ -40,7 +43,7 @@ def login():
         else:
             flash('Invalid email or password.', category='error')
 
-    return render_template("login.html", user=current_user)
+    return render_template("login.html", user=current_user, form=form)
 
 @auth.route('/logout')
 @login_required
@@ -61,7 +64,9 @@ def sign_up():
         if error:
             flash(error, category='error')
         else:
-            new_user = User(email=email, first_name=first_name, password=generate_password_hash(password1, method='pbkdf2:sha256'))
+            is_first_user = User.query.count() == 0
+            new_user = User(email=email, first_name=first_name, password=generate_password_hash(password1, method='pbkdf2:sha256'), is_admin=is_first_user)
+            
             db.session.add(new_user)
             db.session.commit()
             login_user(new_user, remember=True)
@@ -69,3 +74,19 @@ def sign_up():
             return redirect(url_for('views.home'))
 
     return render_template("sign_up.html", user=current_user)
+
+@auth.route('/guest', methods=['GET'])
+def guest_login():
+    # Create a new guest user
+    guest_user = Visitor(
+        session_id=str(uuid4()),  # Generate a unique session ID
+        ip_address=request.remote_addr,
+        is_guest=True
+    )
+    db.session.add(guest_user)
+    db.session.commit()
+
+    # Log in the guest user
+    session['guest_session_id'] = guest_user.session_id
+    flash('You are now logged in as a guest.', category='success')
+    return redirect(url_for('views.home'))

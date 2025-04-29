@@ -3986,3 +3986,2529 @@ sqlalchemy.exc.ArgumentError: Error creating backref 'author' on relationship 'U
 Directory /home/david/Desktop/portfolio/static/images does not exist.
 The CSRF token is missing.
 The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+The CSRF token is missing.
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+2025-04-27 19:51:18,265 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 29, in home
+    return render_template("home.html", user=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+2025-04-27 19:54:04,226 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 29, in home
+    return render_template("home.html", user=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+2025-04-27 19:57:11,677 - INFO - The CSRF token is missing.
+2025-04-27 19:57:19,404 - INFO - The CSRF token is missing.
+2025-04-27 19:58:26,992 - INFO - The CSRF token is missing.
+2025-04-27 20:06:06,795 - INFO - The CSRF token is missing.
+2025-04-27 20:27:11,401 - INFO - The CSRF token is missing.
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-27 20:47:23,668 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-27 20:48:35,379 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 42, in home
+    return render_template("home.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 29, in home
+    return render_template("home.html", user=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-27 21:04:25,513 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 29, in home
+    return render_template("home.html", user=None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 29, in home
+    form = NoteForm()  # Initialize the NoteForm
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-27 21:12:46,766 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 29, in home
+    form = NoteForm()  # Initialize the NoteForm
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-27 21:13:35,967 - INFO - The CSRF token is missing.
+2025-04-27 21:24:22,360 - INFO - The CSRF token is missing.
+2025-04-27 21:24:47,187 - INFO - The CSRF token is missing.
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 48, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 132, in block 'content'
+    'X-CSRF-Token': '{{csrfToken()}}'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'csrfToken' is undefined
+2025-04-28 02:14:00,759 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 48, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 132, in block 'content'
+    'X-CSRF-Token': '{{csrfToken()}}'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'csrfToken' is undefined
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 48, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 132, in block 'content'
+    'X-CSRF-Token': '{{csrfToken()}}'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'csrfToken' is undefined
+2025-04-28 02:14:58,489 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 48, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 132, in block 'content'
+    'X-CSRF-Token': '{{csrfToken()}}'
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'csrfToken' is undefined
+2025-04-28 02:17:10,816 - INFO - The CSRF token is missing.
+2025-04-28 02:39:21,678 - INFO - The CSRF token is missing.
+2025-04-28 03:02:21,303 - INFO - The CSRF token is missing.
+2025-04-28 03:02:39,642 - INFO - The CSRF token is missing.
+2025-04-28 03:33:57,135 - INFO - The CSRF token is missing.
+2025-04-28 03:40:12,504 - INFO - The CSRF token is missing.
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 34, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('blog.view_posts') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-28 04:10:42,898 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 34, in top-level template code
+    <a class="navbar-brand" href="{{ url_for('blog.view_posts') }}">Blog</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 92, in top-level template code
+    <a class="dropdown-item" href="{{ url_for('blog.view_posts') }}">View All Posts</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-28 04:12:47,375 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 92, in top-level template code
+    <a class="dropdown-item" href="{{ url_for('blog.view_posts') }}">View All Posts</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 86, in block 'content'
+    <a href="{{ url_for('blog.view_posts') }}" class="btn btn-info btn-lg">Learn More About Me</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-28 04:16:10,027 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 86, in block 'content'
+    <a href="{{ url_for('blog.view_posts') }}" class="btn btn-info btn-lg">Learn More About Me</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 86, in block 'content'
+    <a href="{{ url_for('blog.view_posts') }}" class="btn btn-info btn-lg">Learn More About Me</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-28 04:19:34,349 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 86, in block 'content'
+    <a href="{{ url_for('blog.view_posts') }}" class="btn btn-info btn-lg">Learn More About Me</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 86, in block 'content'
+    <a href="{{ url_for('blog.view_posts') }}" class="btn btn-info btn-lg">Learn More About Me</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-28 04:19:36,260 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 111, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 86, in block 'content'
+    <a href="{{ url_for('blog.view_posts') }}" class="btn btn-info btn-lg">Learn More About Me</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-28 04:22:25,056 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-28 20:43:57,251 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 20:43:57,459 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 20:43:57,469 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 20:43:57,516 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 20:44:21,003 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 20:44:21,110 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 20:44:21,244 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 20:44:21,246 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 20:44:21,259 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 20:49:16,368 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 20:54:22,365 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 20:56:01,343 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:00:51,469 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:04:22,393 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:06:59,626 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:12:58,809 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:14:22,423 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:17:17,220 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:19:43,853 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:19:45,185 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:22:13,824 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:24:22,414 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:34:55,509 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:35:20,754 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:40:23,171 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:41:53,143 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:41:53,386 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:41:53,396 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:41:53,398 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:41:58,187 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:41:58,223 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:41:58,227 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:41:58,228 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:05,926 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:06,032 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:06,032 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:10,022 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:24,385 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:24,481 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:24,482 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:24,483 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:32,961 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:33,013 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:33,096 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:33,096 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:42:33,098 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:46:10,577 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:46:10,738 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:46:10,759 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:46:10,764 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:46:37,698 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:46:50,285 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:51:08,687 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:52:46,581 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:55:55,638 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:56:10,952 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 21:59:28,530 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:00:51,295 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:00:51,326 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:00:51,456 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:00:51,488 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:00:51,701 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:06:10,989 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:07:23,287 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:14:15,372 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:16:11,013 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:20:28,587 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:25:21,315 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:26:10,951 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:33:36,522 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:36:10,996 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:39:07,584 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:45:43,335 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:46:10,994 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:47:10,492 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:47:56,854 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:47:57,851 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:54:00,171 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:54:03,013 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:54:04,879 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:54:06,524 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:56:11,039 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 22:58:01,590 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:06:10,995 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:07:10,185 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:08:26,790 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:08:27,116 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:11:28,754 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:16:11,040 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:17:58,822 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:25:25,203 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:33:15,880 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:37:29,092 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:46:21,969 - INFO - Existing visitor: 127.0.0.1
+2025-04-28 23:50:59,237 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:00:18,948 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:04:48,177 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:12:00,039 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:17:04,003 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:17:39,693 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:17:47,517 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:18:04,720 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:25:11,352 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:28:03,897 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:32:29,339 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:37:33,887 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:44:13,735 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:50:43,360 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:55:21,150 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:55:21,218 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 00:56:59,616 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:01:07,724 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:01:11,115 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:01:12,756 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:01:13,257 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:06:36,295 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:11:43,514 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:17:26,913 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:20:28,011 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:20:34,567 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:20:40,695 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:20:45,202 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:20:51,364 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:20:55,776 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:21:02,553 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:21:07,017 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:21:13,889 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:21:19,378 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:21:25,623 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:21:31,703 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:21:37,760 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:21:42,253 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:21:48,526 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:21:55,075 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:22:01,385 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:22:07,326 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:22:13,488 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:22:19,545 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:22:25,625 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:22:34,682 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:22:38,035 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:22:44,125 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:22:50,351 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:22:56,518 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:23:02,479 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:23:08,719 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:23:14,844 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:23:20,910 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:24:23,147 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:27:37,799 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:30:28,618 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:30:36,604 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:36:54,575 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:37:00,427 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:43:38,861 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:46:54,575 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:50:53,183 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:53:25,331 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:53:25,825 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:56:53,512 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 01:56:54,605 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:05:43,873 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:06:54,606 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:09:39,035 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:11:16,867 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:11:17,123 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:16:33,336 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:16:54,611 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:22:41,451 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:26:54,663 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:32:02,045 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:36:54,651 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:37:07,518 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:38:03,036 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:38:05,988 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:38:06,496 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:45:30,903 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:46:54,664 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:49:35,439 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:55:28,766 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:56:54,721 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 02:58:06,875 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:04:55,098 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:06:54,747 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:16:54,752 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:19:22,704 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:26:25,584 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:26:54,747 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:27:34,662 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:35:08,532 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:36:54,751 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:38:22,632 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:38:22,960 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:40:39,304 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:41:57,425 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:42:29,252 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:42:29,449 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:42:29,459 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:42:33,243 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:49:24,235 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:52:06,097 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:52:14,186 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:52:14,337 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:52:14,349 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:52:14,358 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:52:38,254 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:53:35,105 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:53:35,191 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:57:18,152 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:57:18,367 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:57:18,372 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:57:18,396 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 03:57:32,322 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:00:11,818 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:06:34,494 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:06:34,621 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:06:40,119 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:06:49,775 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:07:09,414 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:07:18,611 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:07:29,168 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:08:58,189 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:10:15,739 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:10:16,041 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:12:20,096 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:12:20,293 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:12:20,304 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:12:20,304 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:12:23,119 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:12:23,136 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:12:23,224 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:12:23,224 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:13:15,981 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:13:15,995 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:13:16,035 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:13:16,039 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:13:18,638 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:13:18,652 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:13:18,682 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:13:18,691 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:15:51,777 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:21:35,951 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:23:18,868 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:24:55,814 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:24:55,827 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:24:55,946 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:24:55,955 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:24:59,837 - INFO - Existing visitor: 127.0.0.1
+Exception on /guest [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: table user has no column named is_guest
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 80, in guest_login
+    db.session.commit()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 599, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table user has no column named is_guest
+[SQL: INSERT INTO user (email, password, first_name, is_admin, is_guest) VALUES (?, ?, ?, ?, ?)]
+[parameters: (None, None, 'Guest', 0, 1)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-04-29 04:24:59,862 - ERROR - Exception on /guest [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: table user has no column named is_guest
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 80, in guest_login
+    db.session.commit()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/scoping.py", line 599, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2032, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1313, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1288, in _prepare_impl
+    self.session.flush()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4353, in flush
+    self._flush(objects)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4488, in _flush
+    with util.safe_reraise():
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 4449, in _flush
+    flush_context.execute()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) table user has no column named is_guest
+[SQL: INSERT INTO user (email, password, first_name, is_admin, is_guest) VALUES (?, ?, ?, ?, ?)]
+[parameters: (None, None, 'Guest', 0, 1)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-04-29 04:26:11,883 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:26:12,010 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:26:12,201 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:26:12,213 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:26:12,215 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:26:45,777 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:26:45,901 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:26:45,901 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:26:49,402 - INFO - Existing visitor: 127.0.0.1
+Exception on /blog/edit_post/4 [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 129, in edit_post
+    return redirect(url_for('blog.view_posts'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-29 04:26:49,475 - ERROR - Exception on /blog/edit_post/4 [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 129, in edit_post
+    return redirect(url_for('blog.view_posts'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-29 04:26:53,272 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:05,084 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:05,165 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:05,172 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:37,710 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:37,806 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:37,886 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:37,899 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:46,884 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:48,827 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:48,925 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:48,925 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:48,936 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:55,764 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:55,833 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:55,834 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:27:58,712 - INFO - Existing visitor: 127.0.0.1
+Exception on /blog/edit_post/4 [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 141, in edit_post
+    return render_template('edit_post.html', form=form, post=post)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/edit_post.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/edit_post.html", line 21, in block 'content'
+    <a href="{{ url_for('blog.view_posts') }}" class="btn btn-secondary">Cancel</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-29 04:27:58,731 - ERROR - Exception on /blog/edit_post/4 [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 141, in edit_post
+    return render_template('edit_post.html', form=form, post=post)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/edit_post.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/edit_post.html", line 21, in block 'content'
+    <a href="{{ url_for('blog.view_posts') }}" class="btn btn-secondary">Cancel</a>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-29 04:28:02,757 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:28:08,410 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:28:08,435 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:28:08,513 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:28:08,514 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:28:08,513 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:29:09,796 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:34:42,144 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:38:08,708 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:40:27,801 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:46:47,593 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:48:08,725 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:49:33,458 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:49:33,642 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:49:33,655 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:49:46,188 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:49:46,360 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:49:46,364 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:49:57,201 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:49:57,380 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:49:57,380 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:50:05,265 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:50:05,292 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:50:05,395 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:50:05,397 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:50:07,519 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:50:07,558 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:50:07,659 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:50:07,659 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:50:07,669 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:53:15,337 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 04:59:20,001 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:00:02,432 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:00:07,845 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:05:07,583 - INFO - Existing visitor: 127.0.0.1
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form, visitor_count=visitor_count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'hidden_tag'
+2025-04-29 05:05:07,707 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 49, in home
+    return render_template("home.html", user=current_user, form=form, visitor_count=visitor_count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'hidden_tag'
+2025-04-29 05:05:12,428 - INFO - Existing visitor: 127.0.0.1
+Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 43, in login
+    return render_template("login.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 5, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-29 05:05:12,489 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 43, in login
+    return render_template("login.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 5, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-29 05:05:43,870 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:05:44,087 - INFO - Existing visitor: 127.0.0.1
+Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 43, in login
+    return render_template("login.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 5, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-29 05:05:44,090 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 43, in login
+    return render_template("login.html", user=current_user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 5, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-29 05:06:08,637 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:07:25,431 - INFO - Existing visitor: 127.0.0.1
+Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 43, in login
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 5, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-29 05:07:25,490 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 43, in login
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 5, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2025-04-29 05:13:37,166 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:16:38,759 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:16:38,925 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:16:38,941 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:16:45,570 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:16:45,596 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:16:45,651 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:16:45,657 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:16:52,896 - INFO - Existing visitor: 127.0.0.1
+Exception on /guest [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 81, in guest_login
+    guest_user = Visitor(
+                 ^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 571, in _initialize_instance
+    with util.safe_reraise():
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 569, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/decl_base.py", line 2175, in _declarative_constructor
+    raise TypeError(
+TypeError: 'session_id' is an invalid keyword argument for Visitor
+2025-04-29 05:16:52,940 - ERROR - Exception on /guest [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 81, in guest_login
+    guest_user = Visitor(
+                 ^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 571, in _initialize_instance
+    with util.safe_reraise():
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 569, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/decl_base.py", line 2175, in _declarative_constructor
+    raise TypeError(
+TypeError: 'session_id' is an invalid keyword argument for Visitor
+2025-04-29 05:21:10,508 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:28:51,217 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:32:09,118 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:32:09,131 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:32:09,263 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:32:09,270 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:32:13,026 - INFO - Existing visitor: 127.0.0.1
+Exception on /guest [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 81, in guest_login
+    guest_user = Visitor(
+                 ^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 571, in _initialize_instance
+    with util.safe_reraise():
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 569, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/decl_base.py", line 2175, in _declarative_constructor
+    raise TypeError(
+TypeError: 'is_guest' is an invalid keyword argument for Visitor
+2025-04-29 05:32:13,043 - ERROR - Exception on /guest [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 81, in guest_login
+    guest_user = Visitor(
+                 ^^^^^^^^
+  File "<string>", line 4, in __init__
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 571, in _initialize_instance
+    with util.safe_reraise():
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/state.py", line 569, in _initialize_instance
+    manager.original_init(*mixed[1:], **kwargs)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/decl_base.py", line 2175, in _declarative_constructor
+    raise TypeError(
+TypeError: 'is_guest' is an invalid keyword argument for Visitor
+2025-04-29 05:33:32,423 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:36:46,074 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:36:59,054 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:36:59,084 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:36:59,234 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:36:59,251 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:00,901 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:00,966 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:00,979 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:01,050 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:01,063 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:07,302 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:07,361 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:07,374 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:07,406 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:07,406 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:24,037 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:24,063 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:24,190 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:24,190 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:37:33,138 - INFO - Existing visitor: 127.0.0.1
+Exception on /login [POST]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/validators.py", line 401, in __call__
+    import email_validator
+ModuleNotFoundError: No module named 'email_validator'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 34, in login
+    if form.validate_on_submit():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/form.py", line 330, in validate
+    return super().validate(extra)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/form.py", line 147, in validate
+    if not field.validate(self, extra):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/fields/core.py", line 234, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/fields/core.py", line 254, in _run_validation_chain
+    validator(form, self)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/validators.py", line 403, in __call__
+    raise Exception(
+Exception: Install 'email_validator' for email validation support.
+2025-04-29 05:37:33,140 - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/validators.py", line 401, in __call__
+    import email_validator
+ModuleNotFoundError: No module named 'email_validator'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 34, in login
+    if form.validate_on_submit():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/form.py", line 330, in validate
+    return super().validate(extra)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/form.py", line 147, in validate
+    if not field.validate(self, extra):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/fields/core.py", line 234, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/fields/core.py", line 254, in _run_validation_chain
+    validator(form, self)
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/wtforms/validators.py", line 403, in __call__
+    raise Exception(
+Exception: Install 'email_validator' for email validation support.
+2025-04-29 05:39:49,542 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:39:51,629 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:39:51,796 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:39:51,804 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:39:51,807 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:40:17,831 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:40:17,866 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:40:17,947 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:40:17,948 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:40:19,712 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:40:19,779 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:40:19,793 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:40:19,857 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:40:19,860 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:40:21,974 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:42:43,387 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:42:43,491 - INFO - Existing visitor: 127.0.0.1
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 30, in home
+    form = NoteForm() if current_user.is_admin else None # Initialize the NoteForm
+                         ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUserMixin' object has no attribute 'is_admin'
+2025-04-29 05:42:43,492 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 30, in home
+    form = NoteForm() if current_user.is_admin else None # Initialize the NoteForm
+                         ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUserMixin' object has no attribute 'is_admin'
+2025-04-29 05:44:39,469 - INFO - Existing visitor: 127.0.0.1
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 31, in home
+    visitor_count = Visitor.query.count() if current_user.is_admin else None
+                                             ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUserMixin' object has no attribute 'is_admin'
+2025-04-29 05:44:39,473 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 31, in home
+    visitor_count = Visitor.query.count() if current_user.is_admin else None
+                                             ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AnonymousUserMixin' object has no attribute 'is_admin'
+2025-04-29 05:45:58,545 - INFO - Existing visitor: 127.0.0.1
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 48, in home
+    return render_template("home.html", user=current_user, form=form, visitor_count=visitor_count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'hidden_tag'
+2025-04-29 05:45:58,716 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 48, in home
+    return render_template("home.html", user=current_user, form=form, visitor_count=visitor_count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'hidden_tag'
+2025-04-29 05:46:00,969 - INFO - Existing visitor: 127.0.0.1
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 48, in home
+    return render_template("home.html", user=current_user, form=form, visitor_count=visitor_count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'hidden_tag'
+2025-04-29 05:46:01,035 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 48, in home
+    return render_template("home.html", user=current_user, form=form, visitor_count=visitor_count)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 113, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/home.html", line 115, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'None' has no attribute 'hidden_tag'
+2025-04-29 05:46:06,872 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:24,875 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:25,098 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:25,114 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:25,122 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:34,180 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:34,286 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:34,292 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:36,439 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:36,499 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:36,545 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:36,546 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:48:36,550 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:53:02,580 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:54:57,531 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 05:58:36,707 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:00:23,107 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:07:43,988 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:08:36,730 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:12:57,707 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:13:38,853 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:17:46,961 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:18:36,774 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:21:35,253 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:24:17,561 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:28:36,779 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:34:07,463 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:36:13,241 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:38:36,753 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:38:39,909 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:44:15,721 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:40,413 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:40,503 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:40,517 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:40,518 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:47,876 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:47,924 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:47,932 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:52,530 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:54,496 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:54,618 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:54,619 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:54,618 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:57,139 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:46:57,759 - INFO - Existing visitor: 127.0.0.1

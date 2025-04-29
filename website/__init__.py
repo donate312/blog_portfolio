@@ -2,8 +2,9 @@ import os
 from os import path
 import logging
 from dotenv import load_dotenv
-from flask import Flask, render_template, session, jsonify
+from flask import Flask, render_template, session, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
+
 from flask_login import LoginManager, current_user
 from flask_migrate import Migrate, init, migrate, upgrade
 from flask_wtf.csrf import CSRFProtect, generate_csrf
@@ -22,12 +23,12 @@ DB_PATH = path.join(path.abspath(path.dirname(__file__)), DB_NAME)
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(),  # Log to console
+        logging.FileHandler('/home/david/Desktop/portfolio/app.log')  # Log to file
+    ]
 )
-
-file_handler = logging.FileHandler('/home/david/Desktop/portfolio/app.log')  # Use a writable directory
-file_handler.setLevel(logging.INFO)
-logging.getLogger().addHandler(file_handler)
 
 def create_app() -> Flask:
     # Initialize Flask app
@@ -42,18 +43,22 @@ def create_app() -> Flask:
     db.init_app(app)
     migrate.init_app(app, db)
     CSRFProtect(app)  # Initialize CSRF protection
-    csrf.init_app(app)  # Ensure CSRF protection is applied
+      
     
     # Register blueprints
     from .views import views
     from .auth import auth
     from .views import blog
+    from .counter import counter
+
+
     app.register_blueprint(views, url_prefix='/')
-    app.register_blueprint(auth, url_prefix='/')
-    app.register_blueprint(blog)
+    app.register_blueprint(auth, url_prefix='')
+    app.register_blueprint(blog, url_prefix='/blog')
+    app.register_blueprint(counter, url_prefix='/counter')
     
     # Import models and create database
-    from .models import User, Note
+    from .models import User, Note, Visitor
     create_database(app)
     
     # Set up Flask-Login
@@ -78,10 +83,25 @@ def create_app() -> Flask:
     def make_session_permanent():
         session.permanent = True
         app.permanent_session_lifetime = timedelta(days=7)
-   
-    @app.context_processor
-    def inject_csrf_token():
-        return dict(csrf_token=generate_csrf())
+
+    @app.before_request
+    def track_visitor():
+        excluded_ips = ['127.0.0.1', '73.44.112.191']
+        visitor_ip = request.remote_addr
+
+        if visitor_ip not in excluded_ips:
+            existing_visitor = Visitor.query.filter_by(ip_address=visitor_ip).first()
+            if not existing_visitor:
+                new_visitor = Visitor(ip_address=visitor_ip)
+                db.session.add(new_visitor)
+                db.session.commit()
+            logging.info(f'New visitor logged: {visitor_ip}')
+        else:
+            logging.info(f'Existing visitor: {visitor_ip}')
+ 
+   # @app.context_processor
+   # def inject_csrf_token():
+    #    return dict(csrf_token=generate_csrf())
     
     @app.route("/refresh-csrf", methods=["GET"])
     def refresh_csrf():
@@ -92,15 +112,12 @@ def create_app() -> Flask:
     file_handler.setLevel(logging.INFO)
     app.logger.addHandler(file_handler)
     
+
     return app
 
 def create_database(app: Flask):
-    try:
         with app.app_context():
             if not path.exists(DB_PATH):
                 db.create_all()
                 logging.info(f'Database created at {DB_PATH}')
-    except Exception as e:
-        logging.error(f'Error creating database: {e}')
-        raise RuntimeError(f"Failed to create database: {e}")
-
+    

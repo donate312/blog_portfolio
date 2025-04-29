@@ -18,12 +18,14 @@
         </div>
         <div id="post-{{ post.id }}" class="collapse">
             <div class="card-body">
-                <h6 class="card-subtitle mb-2 text-muted">By {{ post_author.first_name if post_author else 'Unknown' }} on {{ post.date_posted.strftime('%Y-%m-%d') }}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">
+                    By {{ post.post_author.first_name if post.post_author else 'Unknown' }} on {{ post.date_posted.strftime('%Y-%m-%d') }}
+                </h6>
                 <p class="card-text">{{ post.content }}</p>
                 <!-- Edit Button -->
                 <a href="{{ url_for('blog.edit_post', post_id=post.id) }}" class="btn btn-warning btn-sm">Edit</a>
                 <!-- Delete Button -->
-                <button class="btn btn-danger btn-sm" onclick="deletePost('{{ post.id }}')">Delete</button>
+                <button class="btn btn-danger btn-sm" onclick="delete_post('{{ post.id }}')">Delete</button>
             </div>
         </div>
     </div>
