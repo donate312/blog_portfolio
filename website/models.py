@@ -18,13 +18,13 @@ class User(db.Model, UserMixin):
     notes = db.relationship('Note')
     posts = db.relationship('BlogPost', backref='post_author', lazy=True)
     is_admin = db.Column(db.Boolean, default=False)  # New field to check if user is admin
-    #is_guest = db.Column(db.Boolean, default=False)  # New field to check if user is guest
+    is_guest = db.Column(db.Boolean, default=False)  # New field to check if user is guest
 
 class BlogPost(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(150), nullable=False)
     content = db.Column(db.Text, nullable=False)
-    author = db.Column(db.Integer, db.ForeignKey('user.id', name='fk_blogpost_user_id'), nullable=False)
+    author = db.Column(db.Integer, db.ForeignKey('user.id') #, name='fk_blogpost_user_id'), nullable=False
     date_posted = db.Column(db.DateTime(timezone=True), default=func.now())
 
 class Visitor(db.Model):

@@ -78,15 +78,18 @@ def sign_up():
 @auth.route('/guest', methods=['GET'])
 def guest_login():
     # Create a new guest user
-    guest_user = Visitor(
-        session_id=str(uuid4()),  # Generate a unique session ID
-        ip_address=request.remote_addr,
+    guest_user = User(
+        email=guest_email,
+        first_name='Guest',
+        password=generate_password_hash('guest_password', method='pbkdf2:sha256'),  # Use a default password for guest users
+       # session_id=str(uuid4()),  # Generate a unique session ID
+       # ip_address=request.remote_addr,
         is_guest=True
     )
     db.session.add(guest_user)
     db.session.commit()
 
     # Log in the guest user
-    session['guest_session_id'] = guest_user.session_id
+    login_user(guest_user, remember=True)
     flash('You are now logged in as a guest.', category='success')
     return redirect(url_for('views.home'))

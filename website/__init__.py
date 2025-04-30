@@ -4,11 +4,11 @@ import logging
 from dotenv import load_dotenv
 from flask import Flask, render_template, session, jsonify, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
-
 from flask_login import LoginManager, current_user
 from flask_migrate import Migrate, init, migrate, upgrade
 from flask_wtf.csrf import CSRFProtect, generate_csrf
 from datetime import timedelta
+from uuid import uuid4
 
 # Initialize extensions
 db = SQLAlchemy()
@@ -30,9 +30,8 @@ logging.basicConfig(
     ]
 )
 
-def create_app() -> Flask:
-    # Initialize Flask app
-    app = Flask(__name__)
+def create_app() -> Flask:   
+    app = Flask(__name__) # Initialize Flask app
     csrf.init_app(app)  # Initialize CSRF protection
     
     # Load configuration
@@ -43,9 +42,8 @@ def create_app() -> Flask:
     # Initialize extensions
     db.init_app(app)
     migrate.init_app(app, db)
-    CSRFProtect(app)  # Initialize CSRF protection
-      
-    
+    CSRFProtect(app)
+         
     # Register blueprints
     from .views import views
     from .auth import auth
@@ -93,7 +91,11 @@ def create_app() -> Flask:
         if visitor_ip not in excluded_ips:
             existing_visitor = Visitor.query.filter_by(ip_address=visitor_ip).first()
             if not existing_visitor:
-                new_visitor = Visitor(ip_address=visitor_ip)
+                new_visitor = Visitor(
+                    ip_address=visitor_ip,
+                    session_id=str(uuid4()),
+                    is_guest=current_user.is_guest if current_user.is_authenticated else False
+                )
                 db.session.add(new_visitor)
                 db.session.commit()
             logging.info(f'New visitor logged: {visitor_ip}')
@@ -101,11 +103,10 @@ def create_app() -> Flask:
             logging.info(f'Existing visitor: {visitor_ip}')
  
     @app.before_request
-    def require_logikn():
+    def require_login():
         # list of endpoints that don't require login
         exempt_routes = [
-            'auth.login',
-            'auth.sign_up',
+            'auth.login',           
             'auth.guest_login',
             'auth.logout',
             'static',  # Allow access to static files (e.g., CSS, JS, images)
