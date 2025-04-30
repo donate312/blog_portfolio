@@ -35,33 +35,34 @@
 </div>
 
 <script>
-function deletePost(postId) {
-    const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content'); // Get CSRF token
-
-    fetch(`/blog/delete_post/${postId}`, {
-        method: 'DELETE',
-        headers: {
-            'X-CSRFToken': csrfToken, // Use the CSRF token from the meta tag
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(response => {
-        console.log('Response status:', response.status); // Log the response status
-        return response.json();
-    })
-    .then(data => {
-        console.log('Response data:', data); // Log the response data
-        if (data.success) {
-            alert(data.message);
-            location.reload(); // Reload the page after deletion
-        } else {
-            alert(data.message);
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error); // Log any errors
-        alert('An error occurred while deleting the post.');
-    });
-}
-</script>
+    function deletePost(postId) {
+        const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+    
+        fetch(`/blog/delete_post/${postId}`, {
+            method: 'DELETE',
+            headers: {
+                'X-CSRF-Token': csrfToken,
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.success) {
+                alert(data.message);
+                location.reload();
+            } else {
+                alert(`Error: ${data.message}`);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred while deleting the post.');
+        });
+    }
+    </script>
 {% endblock %}

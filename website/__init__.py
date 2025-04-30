@@ -2,7 +2,7 @@ import os
 from os import path
 import logging
 from dotenv import load_dotenv
-from flask import Flask, render_template, session, jsonify, request
+from flask import Flask, render_template, session, jsonify, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
 from flask_login import LoginManager, current_user
@@ -100,9 +100,19 @@ def create_app() -> Flask:
         else:
             logging.info(f'Existing visitor: {visitor_ip}')
  
-   # @app.context_processor
-   # def inject_csrf_token():
-    #    return dict(csrf_token=generate_csrf())
+    @app.before_request
+    def require_logikn():
+        # list of endpoints that don't require login
+        exempt_routes = [
+            'auth.login',
+            'auth.sign_up',
+            'auth.guest_login',
+            'auth.logout',
+            'static',  # Allow access to static files (e.g., CSS, JS, images)
+            'refresh-csrf'  # Allow CSRF token refresh
+        ]
+        if request.endpoint not in exempt_routes and not current_user.is_authenticated:
+            return redirect(url_for('auth.login'))
     
     @app.route("/refresh-csrf", methods=["GET"])
     def refresh_csrf():

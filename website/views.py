@@ -64,14 +64,14 @@ def delete_note(note_id):
         return jsonify({'success': False, 'error': 'Invalid CSRF token'}), 403
 
     # Validate session ID (Flask handles this automatically with @login_required)
-    note = Note.query.get(note_id)
-    if note:
-        db.session.delete(note)
-        db.session.commit()
-        return jsonify({'success': True}), 200
-    else:
-        return jsonify({'success': False, 'error': 'Note not found'}), 404
-
+    note = Note.query.get_or_404(note_id)
+    if note.user_id != current_user.id:
+        return jsonify({'success': False, 'error': 'Unauthorized'}), 403
+        
+    db.session.delete(note)
+    db.session.commit()
+    return jsonify({'success': True}), 200
+  
 @views.route('/certs')
 def certs():
     certs_folder = os.path.join(os.getcwd(), 'static', 'images')
@@ -102,13 +102,18 @@ def view_blogposts():
 
 @blog.route('blog/delete_post/<int:post_id>', methods=['DELETE'])
 @login_required
-def delete_post(id):
-    if not current_user.is_admin:
+def delete_post(post_id):
+    csrf_token = request.headers.get('X-CSRF-Token')
+    try:
+        validate_csrf(csrf_token)
+    except Exception as e:
+        return jsonify({'success': False, 'error': 'Invalid CSRF token'}), 403
+    
+    if not current_user.is_authenticated:
         return jsonify({'success': False, 'message': 'Unauthorized'}), 403
     
-    post = BlogPost.query.get_or_404(id)
-    
-    if post.author_id != current_user.id and not current_user.is_admin:
+    post = BlogPost.query.get_or_404(post_id)
+    if post.author != current_user.id and not current_user.is_admin:
         return jsonify({'success': False, 'message': 'Unauthorized'}), 403
     
     db.session.delete(post)
