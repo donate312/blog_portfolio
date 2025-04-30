@@ -54,7 +54,7 @@ def create_app() -> Flask:
 
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='')
-    app.register_blueprint(blog, url_prefix='/blog')
+    app.register_blueprint(blog, url_prefix='')
     app.register_blueprint(counter, url_prefix='/counter')
     
     # Import models and create database
