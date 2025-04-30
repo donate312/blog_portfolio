@@ -1,95 +1,240 @@
-/* Dark Theme Styles */
+/* static/style.css */
+
+/* Default light theme */
 body {
-    background-color: #ffffff;  /* Dark background */
-    color: #6b5858;  /* Light text */
-    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background for light mode */
+    color: #212529; /* Dark text for light mode */
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background: #1e1e1e; /* Dark card background */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
-/* Dark Mode (Now Optional) */
+/* Dark theme */
 body.dark-mode {
-    background-color: #1b1b1b;
-    color: #b6a6a6;
+    background-color: #1a1a1a; /* Dark gray-black background */
+    color: #e0e0e0; /* Light gray text for readability */
 }
 
-body.dark-mode .container {
-    background: #1e1e1e;
-    color: #6b5858;
+/* Navbar */
+.navbar-dark {
+    background-color: #212529; /* Darker navbar background */
 }
 
-button {
-    background-color: #6200ea; /* Purple button */
-    color: white;
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff; /* White text for navbar links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #cccccc; /* Slightly dimmed white on hover */
+}
+
+.navbar-dark .navbar-text {
+    color: #e0e0e0; /* Light gray for visitor counter */
+}
+
+/* Dropdown menus */
+.navbar .dropdown-menu {
+    background-color: #2c3034; /* Dark dropdown background */
+    border: 1px solid #444;
+}
+
+.navbar .dropdown-item {
+    color: #e0e0e0; /* Light gray text */
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+    background-color: #3a3f44; /* Slightly lighter dark on hover */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Header */
+header.bg-dark {
+    background-color: #212529 !important; /* Consistent dark header */
+}
+
+header h1,
+header p {
+    color: #ffffff; /* White text for header */
+}
+
+/* Main content */
+.container,
+.container-fluid {
+    background-color: inherit; /* Inherit body background */
+    color: inherit; /* Inherit body text color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff; /* White headings in dark mode */
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff; /* Ensure headings stay white in dark mode */
+}
+
+/* Links */
+a {
+    color: #0d6efd; /* Bootstrap primary blue for light mode */
+}
+
+a:hover {
+    color: #005cbf; /* Darker blue on hover */
+}
+
+body.dark-mode a {
+    color: #66b0ff; /* Lighter blue for dark mode */
+}
+
+body.dark-mode a:hover {
+    color: #99c7ff; /* Even lighter blue on hover */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #005cbf;
+    border-color: #005cbf;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+    border-color: #545b62;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #3385ff; /* Slightly lighter blue for dark mode */
+    border-color: #3385ff;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #5c9eff;
+    border-color: #5c9eff;
+}
+
+body.dark-mode .btn-secondary {
+    background-color: #4a5056;
+    border-color: #4a5056;
+}
+
+body.dark-mode .btn-secondary:hover {
+    background-color: #60676e;
+    border-color: #60676e;
+}
+
+/* Forms */
+.form-control {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #ced4da;
+}
+
+body.dark-mode .form-control {
+    background-color: #2c3034; /* Dark input background */
+    color: #e0e0e0; /* Light text */
+    border: 1px solid #555;
+}
+
+body.dark-mode .form-control:focus {
+    background-color: #3a3f44;
+    color: #e0e0e0;
+    border-color: #66b0ff;
+    box-shadow: 0 0 0 0.2rem rgba(102, 176, 255, 0.25);
+}
+
+/* Notes section */
+.list-group-item {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #dee2e6;
+}
+
+body.dark-mode .list-group-item {
+    background-color: #2c3034;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+
+/* Blog posts */
+.card {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #dee2e6;
+}
+
+body.dark-mode .card {
+    background-color: #2c3034;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+
+body.dark-mode .card-header {
+    background-color: #3a3f44;
+    border-bottom: 1px solid #444;
+}
+
+body.dark-mode .btn-link {
+    color: #66b0ff; /* Blue for collapsible blog post titles */
+}
+
+body.dark-mode .btn-link:hover {
+    color: #99c7ff;
+}
+
+/* Footer */
+footer.bg-dark {
+    background-color: #212529 !important;
+}
+
+footer p,
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #cccccc;
+}
+
+/* Dark mode toggle button */
+#theme-toggle {
+    background-color: #6c757d;
+    color: #ffffff;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #3700b3;
 }
 
-#box {
-    width: 100%;
-    height: 200px;
-    background-color: #1e1e1e; /* Dark box background */
-    font-size: 1.5rem;
-    text-align: center;
-    animation-name: typewriter;
-    animation-duration: 4s;
-    animation-timing-function: steps(30, end);
-    animation-play-state: running;
-    animation-iteration-count: infinite;
-   /*  border-radius: 10px;
-    display: flex;
-   justify-content: center;
-    align-items: center;
-    margin-top: 20px; */
-}
-img{
-    animation-duration: 4s;
-    animation-timing-function: steps(30, end);
-    animation-play-state: running;
-    animation-iteration-count: infinite;
+body.dark-mode #theme-toggle {
+    background-color: #4a5056;
 }
 
-.typewriter {
-    display: flex;
-    justify-content: center;
+#theme-toggle:hover {
+    background-color: #545b62;
 }
 
-.typewriter p {
-    font-family: monospace;
-    font-size: 1.5rem;
-    margin-inline: auto;
-    overflow: hidden;
-/* keep on single line by default */
-    white-space: nowrap;
-/* the cursor effect */
-    border-right: 0.15em solid #b10a0a;
-/* steps = number of characters in the text */
-    animation: typing 3.5s steps(30) forwards,
-        blink 0.75s step-end infinite;
+body.dark-mode #theme-toggle:hover {
+    background-color: #60676e;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+/* Ensure flash messages are readable */
+.alert {
+    color: #212529; /* Dark text for light mode alerts */
 }
 
-@keyframes blink{
-    50% {
-        border-color: transparent;
-    }
+body.dark-mode .alert {
+    color: #e0e0e0; /* Light text for dark mode alerts */
+    background-color: #3a3f44; /* Darker alert background */
+    border-color: #555;
 }
