@@ -6512,3 +6512,817 @@ jinja2.exceptions.UndefinedError: 'None' has no attribute 'hidden_tag'
 2025-04-29 06:46:54,618 - INFO - Existing visitor: 127.0.0.1
 2025-04-29 06:46:57,139 - INFO - Existing visitor: 127.0.0.1
 2025-04-29 06:46:57,759 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:53:13,043 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:54:26,206 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:56:54,841 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 06:58:09,770 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:05:56,541 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:06:54,838 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:11:52,833 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:16:54,844 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:19:26,951 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:26:29,535 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:26:54,968 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:33:19,968 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:33:29,158 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:36:55,001 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:37:55,871 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:39:20,525 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:44:00,627 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:46:54,910 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:51:58,160 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:56:54,907 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 07:57:36,283 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:02:49,015 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:06:54,957 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:10:14,913 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:11:50,101 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:16:54,966 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:16:59,998 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:19:20,601 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:19:24,982 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:20:24,877 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:23:06,344 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:23:07,133 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:23:35,372 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:24:35,794 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:25:14,113 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:26:54,939 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:28:35,317 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:28:59,397 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:31:12,768 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:36:11,676 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:36:54,982 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:45:18,885 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:46:45,810 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:46:54,994 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:50:38,916 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:50:39,013 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:50:39,087 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:50:39,100 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:50:39,100 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:52:29,714 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 08:59:21,592 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:00:39,566 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:03:36,593 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:09:40,317 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:10:39,528 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:10,527 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:11,496 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:13,157 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:13,648 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:14,778 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:15,180 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:15,984 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:16,816 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:17,228 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:17,915 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:18,555 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:19,753 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:20,124 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:21,064 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:21,869 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:22,769 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:24,059 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:25,256 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:26,607 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:27,197 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:28,540 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:29,208 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:29,834 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:30,451 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:31,213 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:31,988 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:32,594 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:33,112 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:34,219 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:40,227 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:41,047 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:42,088 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:43,136 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:45,075 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:45,728 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:46,676 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:47,836 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:47,979 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:47,993 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:48,010 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:48,240 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:48,901 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:49,417 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:50,860 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:51,763 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:52,509 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:53,565 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:54,901 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:54,902 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-29 09:14:54,945 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:54,947 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:54,949 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:55,022 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:55,025 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:55,871 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:56,935 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:58,158 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:59,319 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:14:59,701 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:00,379 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:00,402 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:00,403 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-29 09:15:00,434 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:00,439 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:00,439 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:00,510 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:01,264 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:01,361 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:01,450 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:01,450 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:02,123 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:03,339 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:04,129 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:05,686 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:06,905 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:06,991 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:06,991 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:06,991 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:17,599 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:17,649 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:17,737 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:17,737 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:24,588 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:26,532 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:26,585 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:26,586 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:26,587 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:32,903 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:32,927 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:32,965 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:32,967 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:15:32,965 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:31,539 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:31,562 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:31,623 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:31,624 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:31,625 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:41,473 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:41,591 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:41,591 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:49,175 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:49,285 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:49,285 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:16:57,144 - INFO - Existing visitor: 127.0.0.1
+Exception on /blog/edit_post/4 [POST]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 133, in edit_post
+    return redirect(url_for('blog.view_posts'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-29 09:16:57,168 - ERROR - Exception on /blog/edit_post/4 [POST]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 133, in edit_post
+    return redirect(url_for('blog.view_posts'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-29 09:17:57,877 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:20:11,205 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:20:13,815 - INFO - Existing visitor: 127.0.0.1
+Exception on /blog/edit_post/4 [POST]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 131, in edit_post
+    return redirect(url_for('blog.view_posts'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-29 09:20:13,853 - ERROR - Exception on /blog/edit_post/4 [POST]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 131, in edit_post
+    return redirect(url_for('blog.view_posts'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/helpers.py", line 232, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'blog.view_posts'. Did you mean 'blog.view_blogposts' instead?
+2025-04-29 09:22:39,223 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:22:41,226 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:22:41,279 - INFO - Existing visitor: 127.0.0.1
+Exception on /blog/view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 101, in view_blogposts
+    return render_template('view_blogposts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: view_blogposts.html
+2025-04-29 09:22:41,286 - ERROR - Exception on /blog/view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 101, in view_blogposts
+    return render_template('view_blogposts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: view_blogposts.html
+2025-04-29 09:23:08,203 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:23:27,465 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:23:27,637 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:23:27,891 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:23:27,907 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:25:10,506 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:25:10,645 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:25:10,662 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:25:12,564 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:25:23,154 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:28:10,454 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:28:10,658 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:28:10,672 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:28:10,678 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:28:14,408 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:28:14,432 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:28:14,474 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:28:14,475 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:28:14,481 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:28:56,644 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:29:44,509 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:29:44,565 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:29:44,695 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:29:44,716 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:29:44,716 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:37:27,331 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:39:44,886 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:41:42,984 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:41:43,127 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:41:43,157 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:41:43,156 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:41:46,066 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:41:46,226 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:41:46,229 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:42:05,668 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:42:45,316 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:42:47,907 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:42:49,146 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:42:50,776 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:42:52,179 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:42:53,613 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:42:56,389 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:42:57,957 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:42:58,898 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:00,483 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:02,954 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:04,842 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:06,561 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:09,048 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:10,313 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:12,131 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:14,909 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:16,559 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:18,370 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:19,503 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:21,414 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:23,700 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:25,520 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:29,589 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:31,685 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:33,503 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:35,011 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:38,561 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:41,949 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:43,507 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:49,292 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:51,409 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:52,606 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:54,249 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:56,205 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:43:57,805 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:44:00,477 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:44:03,203 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:44:05,756 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:44:07,405 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:44:08,622 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:44:09,951 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:44:11,426 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:44:18,422 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:48:46,534 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:51:00,389 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:51:46,472 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:56:22,341 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:56:22,510 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:56:22,521 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 09:56:27,323 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:00:32,541 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:00:32,962 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:00:32,974 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:00:35,079 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:01:04,678 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:02:15,222 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:03:30,107 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:04:17,479 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:10:33,268 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:12:06,418 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:16:51,343 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:17:21,868 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:19:29,040 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:20:11,191 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:20:33,101 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:21:32,643 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:21:36,069 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:21:36,239 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:21:36,248 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:21:43,356 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:22:56,891 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:26:46,011 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:27:27,952 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:28:53,411 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:33:58,307 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:33:58,309 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:34:01,481 - INFO - The CSRF token is missing.
+2025-04-29 10:34:19,338 - INFO - The CSRF token is missing.
+2025-04-29 10:38:05,672 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:39:46,004 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:39:46,176 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:39:46,193 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:40:36,082 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:40:36,283 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:40:36,307 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:40:39,249 - INFO - The CSRF token is missing.
+2025-04-29 10:41:47,633 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:43:58,911 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:44:45,340 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:45:09,996 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:45:21,776 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:45:22,031 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:45:22,083 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:46:18,379 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:46:18,567 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:46:18,567 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:46:21,748 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:46:23,053 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:47:47,886 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:47:48,040 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:47:48,058 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:47:52,497 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:48:45,285 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:48:45,485 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:48:45,491 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:48:48,410 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:51:07,440 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:51:07,585 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:51:07,609 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:51:09,701 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:51:42,047 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:51:46,717 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:51:53,825 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:51:59,483 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:52:03,540 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:52:13,008 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:52:16,683 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:52:20,320 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:52:27,782 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:52:32,264 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 10:56:51,648 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:01:08,354 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:04:00,481 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:04:09,968 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:11:08,379 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:11:16,291 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:15:34,351 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:21:08,315 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:21:39,011 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:31:08,539 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:31:32,803 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:35:49,228 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:37:09,771 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:41:06,281 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:41:13,630 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:41:16,837 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:41:55,406 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:43:48,008 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:44:31,834 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:44:35,651 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:44:36,486 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:44:37,232 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:44:38,088 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:44:38,804 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:44:39,506 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:49:52,588 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:51:55,373 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 11:57:10,268 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:01:55,405 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:03:58,424 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:11:18,611 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:11:55,477 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:13:15,302 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:14:07,125 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:15:46,555 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:21:55,428 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:22:09,023 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:28:36,476 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:35:46,526 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:36:19,373 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:41:10,357 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:47:11,876 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 12:56:24,231 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 13:00:39,417 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 13:10:01,349 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 13:14:53,298 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 13:23:06,592 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 13:28:43,164 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 13:34:07,137 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 13:36:30,768 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 13:40:18,670 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 13:46:05,799 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 13:52:34,306 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 13:59:55,936 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:01:10,485 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:09:00,154 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:13:20,254 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:16:35,980 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:16:37,591 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:21:38,031 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:27:13,631 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:29:53,101 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:32:25,246 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:34:37,409 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:38:20,657 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:38:20,762 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:38:20,763 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:38:20,889 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:38:23,132 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:40:07,688 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:40:37,670 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:45:45,283 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:45:45,550 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:45:45,551 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:45:45,620 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:47:29,648 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:47:53,085 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:53:58,886 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 14:58:56,334 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 15:01:05,521 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 15:08:37,067 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 15:12:52,579 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 15:19:49,276 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 15:24:58,943 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 15:33:50,983 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 15:38:07,787 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 15:46:48,169 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 15:51:48,007 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 15:59:23,828 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:00:51,275 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:04:20,960 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:06:08,590 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:11:26,009 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:16:07,638 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:20:24,842 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:22:53,235 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:22:54,240 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:22:55,249 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:23:01,681 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:23:03,196 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:23:04,718 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:23:05,821 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:23:06,807 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:26:05,644 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:32:06,165 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:37:28,775 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:41:11,517 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:45:30,409 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:45:30,524 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:45:30,524 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:45:30,604 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:45:30,914 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:46:17,052 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 16:52:24,440 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:00:19,564 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:03:06,726 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:05:53,719 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:10:26,686 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:10:26,757 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:10:26,795 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:10:26,851 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:10:27,204 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:10:33,312 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:10:33,961 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:10:33,977 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:10:34,018 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:10:35,076 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:11:05,283 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:11:05,369 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:11:05,369 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:11:15,433 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:11:42,628 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:11:42,824 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:11:42,908 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:11:49,443 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:11:49,648 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:11:49,684 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:11:49,846 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:12:51,752 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:12:56,896 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:12:56,979 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:12:56,980 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:12:57,165 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:12:57,217 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:12,567 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:12,724 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:12,848 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:22,610 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:22,814 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:22,847 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:25,523 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:25,681 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:25,834 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:25,868 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:25,906 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:13:28,038 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:16:10,765 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:17:55,300 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:17:55,430 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:17:55,478 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:17:55,512 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:02,071 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:02,259 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:02,294 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:04,920 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:06,113 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:08,253 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:08,462 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:08,747 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:08,860 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:15,835 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:16,055 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:16,187 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:21,179 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:22,304 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:26,611 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:26,902 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:27,028 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:35,944 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:36,124 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:36,179 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:42,203 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:42,412 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:19:42,424 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:23:54,049 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:24:13,709 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:26:11,175 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:26:11,576 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:26:12,006 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:26:12,947 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:26:32,011 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:26:32,318 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:26:32,531 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:26:32,836 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:27:31,385 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:27:31,612 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:27:31,685 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:27:31,774 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:33:02,076 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:33:58,080 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:38:00,713 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:45:36,047 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:46:51,671 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:47:44,002 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:51:47,859 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:57:05,652 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:57:15,550 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 17:58:21,724 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:01:54,649 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:05:50,230 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:11:36,491 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:11:54,701 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:19:07,677 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:21:54,736 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:25:13,954 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:29:19,990 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:31:54,718 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:37:25,918 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:41:54,722 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:45:54,338 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:13,771 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:15,375 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:15,449 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:44,047 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:44,188 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:44,196 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:44,523 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:47,732 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:47,867 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:48,003 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:48,008 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:48,093 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:48,561 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:48,771 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:48,891 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:53,273 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:53,399 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:47:53,402 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:49:28,902 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:49:29,026 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:49:29,030 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:50:01,684 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:50:06,412 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:50:11,325 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:50:15,358 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:50:19,064 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:50:19,065 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-29 18:50:19,171 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:50:19,175 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:50:19,388 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:50:19,393 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:50:50,375 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:51:54,733 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:24,086 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:24,225 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:24,228 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:27,296 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:27,392 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:27,489 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:27,494 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:30,910 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:31,028 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:31,132 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:31,136 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:31,213 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:34,961 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:35,073 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:35,078 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:53:37,826 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:55:59,185 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:02,009 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:02,117 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:02,249 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:02,250 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:05,050 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:05,198 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:05,303 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:05,303 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:05,391 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:08,620 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:08,718 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:08,850 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 18:56:08,851 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:04:34,726 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:11:51,172 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:15:48,613 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:16:03,947 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:21:54,828 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:23:44,495 - INFO - Existing visitor: 127.0.0.1

@@ -30,8 +30,6 @@ def home():
     form = NoteForm()
     visitor_count = Visitor.query.count()
 
-     
-
     if request.method == 'POST' and current_user.is_authenticated:
         if form.validate_on_submit():  # Validate the form
             note = form.note.data  # Get the note data from the form
@@ -93,28 +91,31 @@ def create_post():
         db.session.add(new_post)
         db.session.commit()
         flash('Blog post created successfully!', category='success')
-        return redirect(url_for('blog.view_posts'))
+        return redirect(url_for('blog.view_blogposts'))
     return render_template('create_post.html', form=form)
 
 @blog.route('/view_posts')
 def view_blogposts():
     # Fetch all blog posts from the database
     posts = BlogPost.query.all() #(BlogPost.id.desc()).all()
-    return render_template('view_posts.html', posts=posts)
+    return render_template('view_blogposts.html', posts=posts)
 
-@blog.route('/delete_post/<int:post_id>', methods=['DELETE'])
+@blog.route('blog/delete_post/<int:post_id>', methods=['DELETE'])
 @login_required
-def delete_post(post_id):
-    post = BlogPost.query.get(post_id)
+def delete_post(id):
+    if not current_user.is_admin:
+        return jsonify({'success': False, 'message': 'Unauthorized'}), 403
+    
+    post = BlogPost.query.get_or_404(id)
+    
+    if post.author_id != current_user.id and not current_user.is_admin:
+        return jsonify({'success': False, 'message': 'Unauthorized'}), 403
+    
+    db.session.delete(post)
+    db.session.commit()
+    flash('Post deleted successfully!', category='success')
+    return jsonify({'success': True})
 
-    if post:
-        db.session.delete(post)
-        db.session.commit()
-        flash('Post deleted successfully!', category='success')
-        return jsonify({'success': True})
-    else:
-        flash('Post not found.', category='error')
-        return jsonify({'success': False}), 404
 
 @blog.route('/edit_post/<int:post_id>', methods=['GET', 'POST'])
 @login_required
@@ -130,7 +131,7 @@ def edit_post(post_id):
         post.content = form.content.data
         db.session.commit()
         flash('Post updated successfully!', category='success')
-        return redirect(url_for('blog.view_posts'))
+        return redirect(url_for('blog.view_blogposts'))
 
 
     return render_template('edit_post.html', form=form, post=post)

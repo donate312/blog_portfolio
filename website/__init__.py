@@ -33,6 +33,7 @@ logging.basicConfig(
 def create_app() -> Flask:
     # Initialize Flask app
     app = Flask(__name__)
+    csrf.init_app(app)  # Initialize CSRF protection
     
     # Load configuration
     app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'default_secret_key')
