@@ -24,7 +24,7 @@ class BlogPost(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(150), nullable=False)
     content = db.Column(db.Text, nullable=False)
-    author = db.Column(db.Integer, db.ForeignKey('user.id') #, name='fk_blogpost_user_id'), nullable=False
+    author = db.Column(db.Integer, db.ForeignKey('user.id')) #, name='fk_blogpost_user_id'), nullable=False
     date_posted = db.Column(db.DateTime(timezone=True), default=func.now())
 
 class Visitor(db.Model):

@@ -6,6 +6,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from . import db
 from flask_login import login_user, login_required, logout_user, current_user
 import re
+import logging
 
 auth = Blueprint('auth', __name__)
 
@@ -77,19 +78,23 @@ def sign_up():
 
 @auth.route('/guest', methods=['GET'])
 def guest_login():
-    # Create a new guest user
-    guest_user = User(
-        email=guest_email,
-        first_name='Guest',
-        password=generate_password_hash('guest_password', method='pbkdf2:sha256'),  # Use a default password for guest users
-       # session_id=str(uuid4()),  # Generate a unique session ID
-       # ip_address=request.remote_addr,
-        is_guest=True
-    )
-    db.session.add(guest_user)
-    db.session.commit()
-
-    # Log in the guest user
-    login_user(guest_user, remember=True)
-    flash('You are now logged in as a guest.', category='success')
-    return redirect(url_for('views.home'))
+    try:
+        unique_id = str(uuid4())
+        guest_email = f"guest_{unique_id}@example.com"
+        guest_user = User(
+            email=guest_email,
+            first_name='Guest',
+            password=generate_password_hash('guest_password', method='pbkdf2:sha256'),  # Use a default password for guest users
+            is_guest=True
+        )
+        db.session.add(guest_user)
+        db.session.commit()
+        login_user(guest_user, remember=True)
+        logging.info(f"Guest user created with email: {guest_email}")
+        flash('You are now logged in as a guest.', category='success')
+        return redirect(url_for('views.home'))
+    except Exception as e:
+        db.session.rollback()
+        logging.error(f"Error creating guest login: {str(e)}")
+        flash('An error occurred while creating a guest account.', category='error')
+        return redirect(url_for('auth.login'))

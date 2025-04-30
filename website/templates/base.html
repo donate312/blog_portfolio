@@ -68,7 +68,7 @@
                     </div>
 </li>
             </ul>
-            {% if visitor_count is not none %}
+            {% if user.is_authenticated and visitor_count is not none %}
             <p>Total Visitors: {{ visitor_count }}</p>
             {% endif %}
             <!-- Right-aligned links -->

@@ -7326,3 +7326,865 @@ jinja2.exceptions.TemplateNotFound: view_blogposts.html
 2025-04-29 19:16:03,947 - INFO - Existing visitor: 127.0.0.1
 2025-04-29 19:21:54,828 - INFO - Existing visitor: 127.0.0.1
 2025-04-29 19:23:44,495 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:30:23,743 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:31:54,904 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:38:10,625 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:41:54,966 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:43:13,871 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:49:02,606 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:51:54,943 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 19:57:04,182 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:01:54,966 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:02:12,103 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:08:46,304 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:08:46,515 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:08:46,540 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:08:46,656 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:08:57,035 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:08:57,148 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:08:57,152 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:02,057 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:07,745 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:07,873 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:07,877 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:19,735 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:19,924 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:19,924 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:19,938 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:22,390 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:23,231 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:23,261 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:23,322 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:23,323 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:23,323 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:27,295 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:27,323 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:27,365 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:27,369 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:09:27,376 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:12,222 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:12,250 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:12,338 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:12,338 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:12,337 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:19,808 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:23,528 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:23,560 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:23,602 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:23,604 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:23,604 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:43,382 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:43,443 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:43,536 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:43,536 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:10:43,536 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:05,510 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:05,648 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:05,810 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:05,810 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:06,629 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:06,777 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:14,443 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:14,565 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:14,666 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:14,675 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:14,675 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:28,438 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:28,491 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:28,575 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:28,575 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:28,575 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:32,298 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:32,326 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:32,366 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:32,367 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:32,367 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:35,315 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:35,343 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:35,401 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:35,400 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:35,402 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:46,993 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:47,145 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:47,350 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:47,508 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:47,991 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:48,143 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:11:54,808 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:17:51,440 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:18:59,335 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:18:59,366 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:18:59,446 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:18:59,459 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:19:01,314 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:19:01,353 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:19:01,364 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:19:01,440 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:19:01,446 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:19:06,549 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:19:06,602 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:19:06,619 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:19:06,686 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:19:06,690 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:21:54,931 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:21:54,955 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:23:29,901 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:13,057 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:13,296 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:13,531 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:14,380 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:14,620 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:14,852 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:15,088 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:15,835 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:16,089 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:16,327 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:16,563 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:16,798 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:17,035 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:17,274 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:17,515 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:17,757 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:17,999 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:18,234 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:18,474 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:18,711 - INFO - The CSRF token is missing.
+2025-04-29 20:25:18,954 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:19,187 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:19,423 - INFO - The CSRF token is missing.
+2025-04-29 20:25:19,662 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:44,093 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:44,298 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:44,449 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:44,591 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:44,625 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:44,770 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:44,773 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,001 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,207 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,225 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,259 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,441 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,674 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,748 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,832 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,879 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,893 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,897 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,941 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:45,998 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,001 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,036 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,112 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,168 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,232 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,323 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,344 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,457 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,469 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,590 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,622 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,727 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,767 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,842 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:46,899 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:47,047 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:47,186 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:47,319 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:49,563 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:49,631 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:49,727 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:25:49,801 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:26:50,536 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:26:50,608 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:26:50,725 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:26:56,880 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:26:57,051 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:29:06,915 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:29:06,956 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:30:01,096 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:30:01,212 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:31:41,795 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:31:54,935 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:31:54,958 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:38:11,646 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:39:06,913 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:39:06,932 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:41:54,921 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:41:54,956 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:43:07,224 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:49:00,250 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:49:07,059 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:49:07,082 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:51:54,954 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:51:54,979 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:53:10,703 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:56:29,362 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:59:06,961 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 20:59:06,987 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:01:09,423 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:01:54,979 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:01:55,006 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:04:09,925 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:04:25,718 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:09:55,048 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:09:55,072 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:09:57,533 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:11:11,725 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:11:54,989 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:11:55,012 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:15:46,419 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:19:54,984 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:19:55,008 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:21:55,015 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:21:55,042 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:23:19,073 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:28:17,122 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:28:35,447 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:28:35,594 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:29:55,054 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:29:55,088 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:31:54,979 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:31:55,008 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:37:37,198 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:39:55,033 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:39:55,057 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:40:03,082 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:40:03,796 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:41:55,063 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:41:55,083 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:43:21,919 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:49:54,991 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:49:55,021 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:50:05,412 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:51:55,027 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:51:55,050 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:55:00,481 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:57:03,773 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:57:03,825 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:58:32,321 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:58:32,777 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:58:33,238 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:59:55,016 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 21:59:55,038 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:01:43,659 - ERROR - Error: Directory migrations already exists and is not empty
+2025-04-29 22:01:55,031 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:01:55,051 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:02:06,181 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:03:16,572 - INFO - Existing visitor: 127.0.0.1
+Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 46, in login
+    return render_template("login.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 71, in template
+    {% if user.is_authenticated and if visitor_count is not none %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got 'visitor_count'
+2025-04-29 22:03:16,593 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 46, in login
+    return render_template("login.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 71, in template
+    {% if user.is_authenticated and if visitor_count is not none %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got 'visitor_count'
+2025-04-29 22:03:21,558 - INFO - Existing visitor: 127.0.0.1
+Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 46, in login
+    return render_template("login.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 71, in template
+    {% if user.is_authenticated and if visitor_count is not none %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got 'visitor_count'
+2025-04-29 22:03:21,613 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 46, in login
+    return render_template("login.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 71, in template
+    {% if user.is_authenticated and if visitor_count is not none %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got 'visitor_count'
+2025-04-29 22:03:25,717 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:03:25,729 - INFO - Existing visitor: 127.0.0.1
+Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 46, in login
+    return render_template("login.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 71, in template
+    {% if user.is_authenticated and if visitor_count is not none %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got 'visitor_count'
+2025-04-29 22:03:25,734 - ERROR - Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 46, in login
+    return render_template("login.html", user=current_user, form=form)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 71, in template
+    {% if user.is_authenticated and if visitor_count is not none %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got 'visitor_count'
+2025-04-29 22:05:52,039 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:05:52,060 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:05:52,151 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:05:52,159 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:05:56,924 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:05:56,969 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:05:57,084 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:05:57,088 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:06:02,150 - INFO - Existing visitor: 127.0.0.1
+Exception on /guest [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 82, in guest_login
+    email=guest_email,
+          ^^^^^^^^^^^
+NameError: name 'guest_email' is not defined
+2025-04-29 22:06:02,151 - ERROR - Exception on /guest [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 82, in guest_login
+    email=guest_email,
+          ^^^^^^^^^^^
+NameError: name 'guest_email' is not defined
+2025-04-29 22:09:52,800 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:11:55,005 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:11:55,033 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:16:25,088 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:21:07,953 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:21:07,975 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:21:08,076 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:21:08,087 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:21:10,218 - INFO - Existing visitor: 127.0.0.1
+Exception on /guest [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/website/auth.py", line 92, in guest_login
+    logging.info(f"Guest user created with email: {guest_email}")
+    ^^^^^^^
+NameError: name 'logging' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 97, in guest_login
+    logging.error(f"Error creating guest login: {str(e)}")
+    ^^^^^^^
+NameError: name 'logging' is not defined
+2025-04-29 22:21:12,140 - ERROR - Exception on /guest [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/website/auth.py", line 92, in guest_login
+    logging.info(f"Guest user created with email: {guest_email}")
+    ^^^^^^^
+NameError: name 'logging' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/auth.py", line 97, in guest_login
+    logging.error(f"Error creating guest login: {str(e)}")
+    ^^^^^^^
+NameError: name 'logging' is not defined
+2025-04-29 22:21:56,973 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:21:57,038 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:21:57,198 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:21:57,201 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:21:57,225 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:07,179 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:07,224 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:07,325 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:07,330 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:09,840 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:11,747 - INFO - Guest user created with email: guest_39c1e731-d6bf-4c93-bf44-c7546ae5328b@example.com
+2025-04-29 22:22:11,767 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:11,907 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:11,909 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:11,911 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:21,503 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:21,541 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:21,652 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:21,653 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:22,766 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:22,777 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:22,844 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:22,848 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:22:48,517 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:12,176 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:14,212 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:14,348 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:14,348 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:14,348 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:22,758 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:22,784 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:22,825 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:22,825 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:22,827 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:29,251 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:29,305 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:29,361 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:29,362 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:29,363 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:35,102 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:35,227 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:35,227 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:42,106 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:42,273 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:42,273 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:59,391 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:59,453 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:59,559 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:23:59,560 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:24:05,771 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:24:08,556 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:24:08,591 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:24:08,591 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:24:35,107 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:24:35,115 - WARNING - Directory /home/david/Desktop/portfolio/static/images does not exist.
+2025-04-29 22:24:35,249 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:24:35,249 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:24:35,253 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:24:35,275 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:26:56,905 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:26:57,152 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:26:57,161 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:26:57,165 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:27:06,455 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:27:06,497 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:27:06,574 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:27:06,575 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:27:06,575 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:27:16,547 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:27:16,574 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:27:16,657 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:27:16,657 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:27:16,657 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:27:19,894 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:31:55,145 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:34:40,288 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:37:16,833 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:41:55,047 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:43:14,267 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:47:16,863 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:50:32,142 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:51:55,123 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:52:03,039 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:55:59,017 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:57:00,482 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:57:00,947 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 22:57:16,863 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:00:21,768 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:01:55,185 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:06:30,793 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:07:16,893 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:10:56,391 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:10:58,346 - INFO - Guest user created with email: guest_5a8f7fc9-d79b-4bb4-be4f-234a9eb6a7a3@example.com
+2025-04-29 23:10:58,955 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:10:59,837 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:11:55,183 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:16:07,239 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:17:16,889 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:19:53,274 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:21:55,179 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:27:16,893 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:28:01,344 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:28:29,901 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:28:30,945 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:28:31,031 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:28:35,484 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:28:35,645 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:28:54,371 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:31:55,182 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:35:28,084 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:37:16,900 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:41:55,181 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:42:02,408 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:42:02,561 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:42:02,738 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:42:02,756 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:42:02,872 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:42:03,055 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:42:03,199 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:02,715 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:02,836 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:37,003 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:37,068 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:37,141 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:37,167 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:37,168 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:42,676 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:42,701 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:42,744 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:42,750 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:42,750 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:46,730 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:51,780 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:51,809 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:51,868 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:51,868 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:44:51,868 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:46:37,339 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:51:55,154 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:54:53,198 - INFO - Existing visitor: 127.0.0.1
+2025-04-29 23:55:23,912 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:00:15,519 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:01:55,250 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:03:45,165 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:04:53,149 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:06:33,045 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:06:33,230 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:08:30,345 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:11:55,198 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:12:10,936 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:12:11,033 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:13:12,843 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:13:16,951 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:14:53,164 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:18:13,791 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:18:14,329 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:19:52,588 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:21:55,231 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:24:53,177 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:27:07,008 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:27:07,161 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:28:12,553 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:31:55,186 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:31:59,102 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:34:55,175 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:39:49,200 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:41:55,252 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:44:53,209 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:47:46,448 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:53:34,153 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 00:54:55,217 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:01:17,534 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:04:55,231 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:06:07,466 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:14:50,752 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:14:55,297 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:19:10,794 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:19:25,706 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:19:26,120 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:24:55,301 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:26:40,108 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:30:59,213 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:34:55,325 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:39:09,245 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:44:31,374 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:44:55,319 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:53:52,873 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:54:55,292 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 01:57:50,062 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:03:26,557 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:03:26,781 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:03:27,883 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:03:28,367 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:04:55,337 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:06:56,180 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:09:06,432 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:09:06,754 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:09:16,852 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:13:11,760 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:14:55,425 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:17:10,466 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:24:55,398 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:26:33,913 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:27:55,519 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:30:46,528 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:33:07,955 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:33:08,082 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:34:55,370 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:36:51,943 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:41:39,148 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:44:42,446 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:44:55,454 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:45:48,605 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:48:46,601 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:50:45,420 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:51:29,906 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:51:30,169 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:52:43,115 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:54:47,790 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:54:55,428 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:56:03,604 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:56:32,276 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 02:58:02,125 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:00:33,233 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:00:33,692 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:00:34,182 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:04:46,981 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:05:03,512 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:07:09,014 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:10:19,692 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:14:53,790 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:16:43,844 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:20:54,758 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:20:54,900 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:24:53,823 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:25:10,411 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:00,108 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:46,122 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:46,368 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:46,938 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:47,168 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:47,174 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:47,397 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:47,397 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:48,555 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:48,808 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:49,034 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:49,331 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:49,557 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:49,560 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:49,787 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:31:49,790 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:32:37,020 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:34:53,842 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:36:55,827 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:44:50,999 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:45:29,709 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:49:45,058 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:54:51,026 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 03:55:36,893 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:04:51,029 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:05:55,116 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:08:51,257 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:11:11,360 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:14:51,036 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:17:12,865 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:22:05,665 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:24:51,099 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:28:54,854 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:28:55,275 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:29:23,363 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:34:51,055 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:35:05,112 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:35:43,418 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:43:01,303 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:44:51,135 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:50:01,745 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:54:51,957 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:56:09,343 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:56:30,731 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:56:30,764 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:56:30,862 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:56:30,880 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:56:47,720 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:56:49,722 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:56:49,779 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:56:49,779 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:56:49,791 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:57:05,519 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:57:05,551 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:57:05,614 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:57:05,614 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 04:57:05,618 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 05:01:30,947 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 05:07:05,991 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 05:08:15,305 - INFO - Existing visitor: 127.0.0.1
+2025-04-30 05:09:17,942 - INFO - Existing visitor: 127.0.0.1
