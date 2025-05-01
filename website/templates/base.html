@@ -81,6 +81,37 @@
         <!-- Right-aligned links -->
         <div class="collapse navbar-collapse justify-content-end" id="navbar">
             <ul class="navbar-nav">
+<<<<<<< HEAD
+                
+
+
+                <!-- Dropdown Menu for Recruiters -->
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="recruiterDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Recruiters
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="recruiterDropdown">
+                        <a class="dropdown-item" href="{{ url_for('static', filename='DavidOnate_hdResume.pdf') }}" download>Download Resume</a>
+                        <a class="dropdown-item" href="{{ url_for('views.certs') }}">Certifications</a>
+                        <a class="dropdown-item" href="#contact">Lets Connect</a>
+                    </div>
+</li>
+            </ul>
+            {% if user.is_authenticated and visitor_count is not none %}
+            <p>Total Visitors: {{ visitor_count }}</p>
+            {% endif %}
+            <!-- Right-aligned links -->
+            <ul class="navbar-nav ml-auto">
+=======
+>>>>>>> 3f991465634d7f73c64bc386befc12ad65c821fd
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/donate312/blog_portfolio.git" target="_blank">
                         <i class="fa fa-github"></i> GitHub
