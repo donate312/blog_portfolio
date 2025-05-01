@@ -1,20 +1,30 @@
 function deleteNote(noteId) {
-    const csrfToken = document.querySelector('input[name="csrf_token"]').value; // Get CSRF token from the DOM
+    const csrfToken = document.querySelector('input[name="csrf_token"]').value;
+    console.log('Deleting note:', noteId, 'CSRF Token:', csrfToken);
 
-    fetch("/delete-note", {
-        method: "POST",
-        body: JSON.stringify({ noteId: noteId }),
+    fetch(`/delete-note/${noteId}`, {
+        method: 'DELETE',
         headers: {
-            "Content-Type": "application/json",
-            "X-CSRF-Token": csrfToken // Include CSRF token in the headers
-        },
-    }).then((_res) => {
-        if (_res.ok) {
-            window.location.href = "/";
-        } else {
-            console.error("Failed to delete note.");
+            'Content-Type': 'application/json',
+            'X-CSRF-Token': csrfToken
         }
-    }).catch((err) => {
-        console.error("Error:", err);
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            alert(data.message || 'Note deleted successfully!');
+            window.location.href = '/';
+        } else {
+            alert(`Error: ${data.message || 'Failed to delete note.'}`);
+        }
+    })
+    .catch(error => {
+        console.error('Error deleting note:', error);
+        alert('An error occurred while deleting the note. Please try again.');
     });
 }

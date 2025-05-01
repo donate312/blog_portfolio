@@ -101,25 +101,25 @@
                 <li class="list-group-item d-flex justify-content-between align-items-center">
                     {{ note.data }}
                     <button type="button" class="btn btn-danger btn-sm" onClick="deleteNote('{{ note.id }}')">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true">×</span>
                     </button>
                 </li>
                 {% endfor %}
             </ul>
             {% else %}
-            <p>Leave me note or a message!!</p>
+            <p>Leave me a note or a message!!</p>
             {% endif %}
 
             <!-- Add Note Form -->
             <form method="POST">
                 {{ form.hidden_tag() }}
-                <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
                 {{ form.note(class="form-control mb-3", placeholder="Write your note here...") }}
                 {{ form.submit(class="btn btn-primary") }}
             </form>
         </div>
     </div>
 </div>
+
 
 <script>
     function deleteNote(noteId) {
