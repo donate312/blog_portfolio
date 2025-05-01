@@ -86,7 +86,7 @@ def create_post():
         new_post = BlogPost(
             title=form.title.data,
             content=form.content.data,
-            author=current_user.id
+            author=current_user
         )
         db.session.add(new_post)
         db.session.commit()
