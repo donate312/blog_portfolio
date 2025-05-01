@@ -56,21 +56,27 @@ def images():
 @views.route('/delete-note/<int:note_id>', methods=['DELETE'])
 @login_required
 def delete_note(note_id):
-    # Validate CSRF token
     csrf_token = request.headers.get('X-CSRF-Token')
     try:
         validate_csrf(csrf_token)
     except Exception as e:
-        return jsonify({'success': False, 'error': 'Invalid CSRF token'}), 403
+        logging.error(f'CSRF validation failed for note {note_id}: {str(e)}')
+        return jsonify({'success': False, 'message': 'Invalid CSRF token'}), 403
 
-    # Validate session ID (Flask handles this automatically with @login_required)
     note = Note.query.get_or_404(note_id)
     if note.user_id != current_user.id:
-        return jsonify({'success': False, 'error': 'Unauthorized'}), 403
-        
-    db.session.delete(note)
-    db.session.commit()
-    return jsonify({'success': True}), 200
+        logging.warning(f'Unauthorized attempt to delete note {note_id} by user {current_user.id}')
+        return jsonify({'success': False, 'message': 'You are not authorized to delete this note'}), 403
+
+    try:
+        db.session.delete(note)
+        db.session.commit()
+        logging.info(f'Note {note_id} deleted by user {current_user.id}')
+        return jsonify({'success': True, 'message': 'Note deleted successfully'}), 200
+    except Exception as e:
+        db.session.rollback()
+        logging.error(f'Error deleting note {note_id}: {str(e)}')
+        return jsonify({'success': False, 'message': 'An error occurred while deleting the note'}), 500
   
 @views.route('/certs')
 def certs():
