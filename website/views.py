@@ -30,9 +30,17 @@ def home():
     form = NoteForm()
     visitor_count = Visitor.query.count()
 
+    flash_type = request.args.get('flash')
+    flash_message = request.args.get('message')
+    if flash_type and flash_message:
+        flash(flash_message, category=flash_type)
+
     if request.method == 'POST' and current_user.is_authenticated:
-        if form.validate_on_submit():  # Validate the form
-            note = form.note.data  # Get the note data from the form
+        if current_user.is_guest:
+            flash('Guest users cannot add notes.', category='error')
+            return redirect(url_for('views.home'))
+        if form.validate_on_submit():
+            note = form.note.data
             if len(note) < 1:
                 flash('Note is too short', category='error')
             else:
@@ -56,6 +64,10 @@ def images():
 @views.route('/delete-note/<int:note_id>', methods=['DELETE'])
 @login_required
 def delete_note(note_id):
+    if current_user.is_guest:
+        logging.warning(f'Guest user {current_user.id} attempted to delete note {note_id}')
+        return jsonify({'success': False, 'message': 'Guest users cannot delete notes'}), 403
+
     csrf_token = request.headers.get('X-CSRF-Token')
     try:
         validate_csrf(csrf_token)
@@ -77,6 +89,7 @@ def delete_note(note_id):
         db.session.rollback()
         logging.error(f'Error deleting note {note_id}: {str(e)}')
         return jsonify({'success': False, 'message': 'An error occurred while deleting the note'}), 500
+
   
 @views.route('/certs')
 def certs():
