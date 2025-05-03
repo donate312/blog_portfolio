@@ -3,22 +3,18 @@
 
 {% block content %}
 <div class="container-fluid mt-4">
+    <!-- Home Page -->
     <div class="row">
-        <!-- Main Content -->
-        <div class="container mt-4">
-            <div class="row">
-                <div class="text-center col-md-12">
-                    <h1 class="mb-4">Welcome Recruiters and Hiring Managers!</h1>
-                    <p>Please note I update the site on a daily basis. Feel free to check out the code in my GitHub Repo.</p>
-        
+        <div class="col-md-12 text-center">
+            <h1 class="mb-4">Welcome to My Blog</h1>
+            <p class="lead">I update this webserver daily.</p>
+            <p>Feel free to check out the code in my GitHub repository!</p>
                     <!-- Display an Image -->
-                    <div class="my-4 text-center">
-                        <img src="{{ url_for('static', filename='images/LPP4.png') }}" alt="My Picture" class="img-fluid rounded shadow" width="300">
-                    </div>
-                    <!--<p class="lead text-center"><i><h9>taken after passing the 2023 CompTIA A+ Certification Exam.</h9></i></p>-->
-                
-                    </div>
-                </div>
+            <div class="my-4 text-center">
+                <img src="{{ url_for('static', filename='images/LPP4.png') }}" alt="My Picture" class="img-fluid rounded shadow" width="300">
+            </div>     
+        </div>
+    </div>
         
 
             <div class="container mt-5">
@@ -54,11 +50,13 @@
                     <h2>The knowledge is free..</h2>
                     <p>
                         <strong>DID YOU KNOW?</strong> Harvard University puts their ENTIRE 2023 CS50 course on YouTube for FREE? 
-                        You mean I don't have to pay $50,000 for a degree? That's when it hit me. I realized the degree is $50,000, 
-                        and the knowledge is what's free.
-                        From that point, I became increasingly interested in everything thats Computer Science. I then focused on building my workstation at home,
+                        because I did not. literally the entire course samething that I would get if I was a student. I realized the degree is $50,000, 
+                        and the knowledge is free. Now, the question is what good is the knowledge if I don't have the degree? and how do I prove that I have the knowledge?
+                        From that point, I became increasingly interested in everything thats Computer Science. That CS50 course has probably been the best course on
+                        Python that I've ever taken and I've taken many Intro To Python courses. I then focused on building my workstation at home,
                         to a complete home office setup with 3 monitors and 2 MFDs to maxamize productivity. At the same time, I was studying for the CompTIA A+ Certification 
-                        because I figured I had to start somewhere.
+                        because it was either CompTIA or Cisco and just like the CS50 course all of the material you need to pass the exam is free. 
+                        I realize that I dont have anytime to waste.
                     </p>
                     <p>
                         My years in the Service Industry have taught me great customer service, communication, and conflict resolution skills. 
@@ -75,7 +73,7 @@
                     </p>
                     <p>
                         I started this web server about a month ago. You can check out the code in my 
-                        <a href="https://github.com/your-repo" target="_blank">GitHub repository</a>.
+                        <a href="https://github.com/blog_portfolio.git" target="_blank">GitHub repository</a>.
                     </p>
                 </div>
 
@@ -105,7 +103,7 @@
                 {% endfor %}
             </ul>
             {% else %}
-            <p>Leave me a note or a message!!</p>
+            <p>Leave me a message!!</p>
             {% endif %}
 
             <!-- Add Note Form -->
@@ -118,16 +116,16 @@
     </div>
 </div>
 
-
 <script>
     function deleteNote(noteId) {
         const csrfToken = document.querySelector('input[name="csrf_token"]').value;
-    
+        console.log('Deleting note:', noteId, 'CSRF Token:', csrfToken);
+
         fetch(`/delete-note/${noteId}`, {
             method: 'DELETE',
             headers: {
-                'X-CSRF-Token': csrfToken,
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'X-CSRF-Token': csrfToken
             }
         })
         .then(response => {
@@ -138,19 +136,17 @@
         })
         .then(data => {
             if (data.success) {
-                alert(data.message);
-                window.location.href = '/';
+                window.location.href = '/?flash=success&message=' + encodeURIComponent(data.message || 'Note deleted successfully');
             } else {
-                alert(`Error: ${data.message}`);
+                window.location.href = '/?flash=error&message=' + encodeURIComponent(data.message || 'Failed to delete note');
             }
         })
         .catch(error => {
             console.error('Error deleting note:', error);
-            alert('An error occurred while deleting the note.');
+            window.location.href = '/?flash=error&message=' + encodeURIComponent('An error occurred while deleting the note');
         });
     }
-    </script>
-
+</script>
 <div id="contact" class="container mt-5">
     <h2 class="text-center">Contact Me</h2>
     <p class="text-center">Feel free to reach out to me via email or LinkedIn!</p>

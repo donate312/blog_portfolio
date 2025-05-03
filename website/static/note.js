@@ -17,14 +17,13 @@ function deleteNote(noteId) {
     })
     .then(data => {
         if (data.success) {
-            alert(data.message || 'Note deleted successfully!');
-            window.location.href = '/';
+            window.location.href = '/?flash=success&message=' + encodeURIComponent(data.message || 'Note deleted successfully');
         } else {
-            alert(`Error: ${data.message || 'Failed to delete note.'}`);
+            window.location.href = '/?flash=error&message=' + encodeURIComponent(data.message || 'Failed to delete note');
         }
     })
     .catch(error => {
         console.error('Error deleting note:', error);
-        alert('An error occurred while deleting the note. Please try again.');
+        window.location.href = '/?flash=error&message=' + encodeURIComponent('An error occurred while deleting the note');
     });
 }
