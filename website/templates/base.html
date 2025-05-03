@@ -73,10 +73,22 @@
             </div>
         </div>
 
-        <!-- Visitor Counter (Centered) -->
-        {% if visitor_count is not none %}
-        <p class="navbar-text mx-auto">Total Visitors: {{ visitor_count }}</p>
-        {% endif %}
+        <!-- Visitor Counter and User Name (Centered) -->
+        <div class="navbar-text mx-auto">
+            {% if user.is_authenticated %}
+                Logged in as: 
+                {% if user.is_guest %}
+                    Guest
+                {% elif user.is_admin %}
+                    Admin
+                {% else %}
+                    {{ user.first_name }}
+                {% endif %}
+                {% if user.is_admin and visitor_count is not none %}
+                    | Total Visitors: {{ visitor_count }}
+                {% endif %}
+            {% endif %}
+        </div>
 
         <!-- Right-aligned links -->
         <div class="collapse navbar-collapse justify-content-end" id="navbar">
