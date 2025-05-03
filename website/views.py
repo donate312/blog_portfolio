@@ -3,6 +3,9 @@ from flask_login import login_required, current_user
 from .models import Note, BlogPost, Visitor
 from . import db
 from .forms import BlogPostForm, EditPostForm, NoteForm
+from flask_wtf import FlaskForm
+from wtforms import StringField, TextAreaField, SubmitField
+from wtforms.validators import DataRequired, Email
 import json
 import os
 import logging
@@ -12,8 +15,14 @@ from flask_wtf.csrf import validate_csrf
 views = Blueprint('views', __name__)
 blog = Blueprint('blog', __name__)
 
-
 logging.basicConfig(level=logging.INFO)
+
+# Contact Form
+class ContactForm(FlaskForm):
+    name = StringField('Name', validators=[DataRequired()])
+    email = StringField('Email', validators=[DataRequired(), Email()])
+    message = TextAreaField('Message', validators=[DataRequired()])
+    submit = SubmitField('Send Message')
 
 def list_files_in_directory(directory_path):
     try:
@@ -53,13 +62,22 @@ def home():
 
     return render_template("home.html", user=current_user, form=form, visitor_count=visitor_count)
 
+@views.route('/contact', methods=['GET', 'POST'])
+def contact():
+    form = ContactForm()
+    if form.validate_on_submit():
+        # Log the contact message (could integrate email or database storage later)
+        logging.info(f"Contact form submission: Name={form.name.data}, Email={form.email.data}, Message={form.message.data}")
+        flash('Thank you for your message! I’ll get back to you soon.', category='success')
+        return redirect(url_for('views.home'))
+    return render_template('contact.html', form=form, user=current_user)
+
 @views.route('/images')
 @login_required
 def images():
     image_folder = os.path.join(os.getcwd(), 'static', 'images')
     image_list = list_files_in_directory(image_folder)
     return render_template("images.html", images=image_list, user=current_user)
-
 
 @views.route('/delete-note/<int:note_id>', methods=['DELETE'])
 @login_required
@@ -90,7 +108,6 @@ def delete_note(note_id):
         logging.error(f'Error deleting note {note_id}: {str(e)}')
         return jsonify({'success': False, 'message': 'An error occurred while deleting the note'}), 500
 
-  
 @views.route('/certs')
 def certs():
     certs_folder = os.path.join(os.getcwd(), 'static', 'images')
@@ -115,8 +132,7 @@ def create_post():
 
 @blog.route('/view_posts')
 def view_blogposts():
-    # Fetch all blog posts from the database
-    posts = BlogPost.query.all() #(BlogPost.id.desc()).all()
+    posts = BlogPost.query.all()
     return render_template('view_blogposts.html', posts=posts)
 
 @blog.route('blog/delete_post/<int:post_id>', methods=['DELETE'])
@@ -140,7 +156,6 @@ def delete_post(post_id):
     flash('Post deleted successfully!', category='success')
     return jsonify({'success': True})
 
-
 @blog.route('/edit_post/<int:post_id>', methods=['GET', 'POST'])
 @login_required
 def edit_post(post_id):
@@ -148,16 +163,13 @@ def edit_post(post_id):
         flash('You are not authorized to edit posts.', category='error')
         return redirect(url_for('blog.view_blogposts'))
     post = BlogPost.query.get_or_404(post_id)
-    form = BlogPostForm(obj=post)  # Pre-fill the form with the post data
-
+    form = BlogPostForm(obj=post)
     if form.validate_on_submit():
         post.title = form.title.data
         post.content = form.content.data
         db.session.commit()
         flash('Post updated successfully!', category='success')
         return redirect(url_for('blog.view_blogposts'))
-
-
     return render_template('edit_post.html', form=form, post=post)
 
 @views.route('/visitor-counter')
