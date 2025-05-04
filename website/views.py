@@ -62,11 +62,14 @@ def home():
 
     return render_template("home.html", user=current_user, form=form, visitor_count=visitor_count)
 
+@views.route('/resume')
+def resume():
+    return render_template('resume.html', user=current_user)
+
 @views.route('/contact', methods=['GET', 'POST'])
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        # Log the contact message (could integrate email or database storage later)
         logging.info(f"Contact form submission: Name={form.name.data}, Email={form.email.data}, Message={form.message.data}")
         flash('Thank you for your message! I’ll get back to you soon.', category='success')
         return redirect(url_for('views.home'))

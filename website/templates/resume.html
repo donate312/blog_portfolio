@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% block title %}Resume - David M Onate{% endblock %}
+
+{% block content %}
+<div class="container my-4">
+    <h1 class="text-center mb-4">Resume</h1>
+    <div class="text-center mb-4">
+        <a href="{{ url_for('static', filename='DavidOnate_hdResume.pdf') }}" class="btn btn-primary" download>Download PDF Version</a>
+    </div>
+
+    <!-- Contact Information -->
+    <section class="mb-5">
+        <h2 class="text-center">David M Onate</h2>
+        <p class="text-center">
+            <a href="mailto:david.onate312@gmail.com">david.onate312@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/davidonate312" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/donate312" target="_blank">GitHub</a>
+        </p>
+    </section>
+
+    <!-- Summary -->
+    <section class="mb-5">
+        <h3>Professional Summary</h3>
+        <p>
+            CompTIA A+ certified IT professional with hands-on experience in web development, network analysis, and customer service. Skilled in Python, Flask, and Linux, with a passion for cybersecurity and problem-solving. Seeking an entry-level help desk or cybersecurity role to apply technical expertise and strong communication skills.
+            CompTIA Security+ in progress (by July 2025)
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="mb-5">
+        <h3>Skills</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Technical:</strong> Python, Flask, Linux, Wireshark, TCPdump, Pi-hole, Nginx, Gunicorn</li>
+            <li class="list-group-item"><strong>Certifications:</strong> CompTIA A+ (2023)</li>
+            <li class="list-group-item"><strong>Soft Skills:</strong> Customer Service, Communication, Problem-Solving, Conflict Resolution</li>
+        </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="mb-5">
+        <h3>Experience</h3>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">IT Technical Support (Self-Directed Homelabs)</h5>
+                <h6 class="card-subtitle mb-2 text-muted">2023 – Present</h6>
+                <ul>
+                    <li>Developed and hosted a Flask-based portfolio website on a Raspberry Pi, using Nginx and Gunicorn.</li>
+                    <li>Analyzed network traffic with Wireshark and TCPdump, identifying security vulnerabilities.</li>
+                    <li>Configured a Pi-hole server for ad-blocking and DNS query tracking.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Office Systems Associate, Konica Minolta</h5>
+                <h6 class="card-subtitle mb-2 text-muted">01/2024-04/2025</h6>
+                <ul>
+                    <li>Provided technical support for multifunction devices, resolving hardware and software issues.</li>
+                    <li>Developed strong communication skills, assisting clients with troubleshooting and training.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Server/Bartender, Various Restaurants</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Years TBD</h6>
+                <ul>
+                    <li>Honed customer service, conflict resolution, and multitasking skills in high-pressure environments.</li>
+                    <li>Trained new staff, demonstrating leadership and adaptability.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="mb-5">
+        <h3>Education & Training</h3>
+        
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Self-Directed Learning</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Ongoing</h6>
+                <p>Studied networking, cybersecurity, and Linux through online resources and homelabs.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">CS50: Introduction to Computer Science</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Harvard University (Online), 2023</h6>
+                <p>Completed coursework in Python, C, SQL, and web development, building a strong programming foundation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="mb-5">
+        <h3>Certifications</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">CompTIA A+ (2023) – Validates skills in hardware, software, and troubleshooting.</li>
+        </ul>
+    </section>
+</div>
+{% endblock %}
