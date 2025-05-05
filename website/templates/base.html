@@ -29,9 +29,9 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <!-- Left-aligned links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="{{ url_for('views.home') }}">Home</a>
-                    </li>
+                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('blog.view_blogposts') }}">Blog</a>
                     </li>
@@ -46,6 +46,11 @@
                             <li><a class="dropdown-item" href="{{ url_for('views.contact') }}">Contact Me</a></li>
                         </ul>
                     </li>
+                    {% if user.is_authenticated and user.is_admin %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('views.admin_dashboard') }}">Admin Dashboard</a>
+                    </li>
+                    {% endif %}
                 </ul>
                 <!-- Visitor Counter and User Name (Centered) -->
                 <span class="navbar-text mx-auto">
