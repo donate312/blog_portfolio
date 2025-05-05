@@ -10032,3 +10032,596 @@ NameError: name 'logging' is not defined
 2025-05-04 23:25:45,291 - INFO - Existing visitor: 127.0.0.1
 2025-05-04 23:29:02,399 - INFO - Existing visitor: 127.0.0.1
 2025-05-04 23:33:21,090 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:02,371 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:09,362 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:24,482 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:24,682 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:24,948 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:25,348 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:31,552 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:31,744 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:32,031 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:35,529 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:35,734 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:35,960 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:39,645 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:41,464 - INFO - Guest user created with email: guest_1348354b-2f75-40d3-bea6-176312b76fa1@example.com
+2025-05-04 23:39:41,657 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:41,926 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:39:41,929 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:40:02,868 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:40:03,172 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:44:42,319 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:45:16,670 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:45:16,815 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:49:02,430 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:52:43,795 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:00:20,604 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:00:20,833 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:00:20,867 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:00:20,909 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:00:31,307 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:00:31,491 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:00:31,622 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:01:00,166 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:01:00,326 - INFO - Contact form submission: Name=david, Email=David83152@gmail.com, Message=testing testicles1
+2025-05-05 00:01:00,352 - INFO - Stored contact message ID=1
+2025-05-05 00:01:01,642 - INFO - Email sent to david.onate312@gmail.com for submission from David83152@gmail.com
+2025-05-05 00:01:01,665 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:01:01,794 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:01:01,793 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:01:01,926 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:04:39,435 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:09:15,787 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:09:56,260 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:09:56,288 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:09:56,406 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:09:56,553 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:10:05,947 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:10:07,952 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:10:08,016 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:10:08,033 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:10:08,165 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:10:29,046 - INFO - Existing visitor: 127.0.0.1
+Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: blog_post.date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 169, in view_blogposts
+    posts = BlogPost.query.all()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: blog_post.date
+[SQL: SELECT blog_post.id AS blog_post_id, blog_post.title AS blog_post_title, blog_post.content AS blog_post_content, blog_post.date AS blog_post_date, blog_post.author AS blog_post_author 
+FROM blog_post]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-05 00:10:29,148 - ERROR - Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: blog_post.date
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 169, in view_blogposts
+    posts = BlogPost.query.all()
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2704, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2858, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2365, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/orm/context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1638, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1843, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1983, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2352, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1964, in _exec_single_context
+    self.dialect.do_execute(
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 945, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: blog_post.date
+[SQL: SELECT blog_post.id AS blog_post_id, blog_post.title AS blog_post_title, blog_post.content AS blog_post_content, blog_post.date AS blog_post_date, blog_post.author AS blog_post_author 
+FROM blog_post]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-05-05 00:15:01,606 - INFO - Existing visitor: 127.0.0.1
+Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 170, in view_blogposts
+    return render_template('view_blogposts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 99, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 22, in block 'content'
+    By {{ post.post_author.first_name if post.post_author else 'Unknown' }} on {{ post.date_posted.strftime('%Y-%m-%d') }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'website.models.BlogPost object' has no attribute 'date_posted'
+2025-05-05 00:15:01,720 - ERROR - Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 170, in view_blogposts
+    return render_template('view_blogposts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 99, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 22, in block 'content'
+    By {{ post.post_author.first_name if post.post_author else 'Unknown' }} on {{ post.date_posted.strftime('%Y-%m-%d') }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'website.models.BlogPost object' has no attribute 'date_posted'
+2025-05-05 00:15:07,608 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:15:07,815 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:15:07,833 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:15:07,876 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:15:10,073 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:15:10,215 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:15:10,218 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:15:10,291 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:15:14,271 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:15:14,370 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:15:14,551 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:15:23,849 - INFO - Existing visitor: 127.0.0.1
+Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 170, in view_blogposts
+    return render_template('view_blogposts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 99, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 22, in block 'content'
+    By {{ post.post_author.first_name if post.post_author else 'Unknown' }} on {{ post.date_posted.strftime('%Y-%m-%d') }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'website.models.BlogPost object' has no attribute 'date_posted'
+2025-05-05 00:15:23,855 - ERROR - Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 170, in view_blogposts
+    return render_template('view_blogposts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 99, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 22, in block 'content'
+    By {{ post.post_author.first_name if post.post_author else 'Unknown' }} on {{ post.date_posted.strftime('%Y-%m-%d') }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'website.models.BlogPost object' has no attribute 'date_posted'
+2025-05-05 00:16:40,692 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:19:32,748 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:19:36,153 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:25:17,815 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:33:52,693 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:38:23,595 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:45:49,063 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:48:30,806 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:49:54,490 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:51:32,879 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:51:33,010 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:53:38,659 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:53:38,900 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:53:38,912 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:53:39,074 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 00:58:22,079 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:03:39,691 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:07:18,459 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:13:39,988 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:15:58,947 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:00,157 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:00,169 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:00,177 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:00,182 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:00,288 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:00,301 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:00,301 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:00,311 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:00,313 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:00,425 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:00,944 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:16:01,071 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:22:03,775 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:23:39,242 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:25:24,848 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:31:45,188 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:33:39,235 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:39:14,078 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:43:39,713 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:44:30,653 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:51:44,106 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:53:39,303 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:55:54,861 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:55:55,356 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:55:55,815 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:55:56,457 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:55:57,110 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:55:57,642 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:55:58,715 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:55:59,328 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:55:59,842 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:00,451 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:01,073 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:01,644 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:02,267 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:02,797 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:03,392 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:04,024 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:04,512 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:05,128 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:05,909 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:06,497 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:07,719 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:08,292 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:08,921 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:09,450 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:10,088 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:10,611 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:11,229 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:11,927 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:12,449 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:12,925 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:13,389 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:13,909 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:14,556 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:15,095 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:15,763 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:16,721 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:17,287 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:17,971 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:18,532 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:19,062 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:19,552 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:20,009 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:20,638 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:56:47,043 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:58:33,055 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 01:58:35,409 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 02:01:53,807 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 02:03:39,375 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 02:08:08,792 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 02:15:18,766 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 02:15:58,802 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 02:16:06,096 - INFO - Existing visitor: 127.0.0.1
+Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 170, in view_blogposts
+    return render_template('view_blogposts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 99, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 22, in block 'content'
+    By {{ post.post_author.first_name if post.post_author else 'Unknown' }} on {{ post.date_posted.strftime('%Y-%m-%d') }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'website.models.BlogPost object' has no attribute 'date_posted'
+2025-05-05 02:16:06,177 - ERROR - Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 170, in view_blogposts
+    return render_template('view_blogposts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 99, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 22, in block 'content'
+    By {{ post.post_author.first_name if post.post_author else 'Unknown' }} on {{ post.date_posted.strftime('%Y-%m-%d') }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'website.models.BlogPost object' has no attribute 'date_posted'
+2025-05-05 02:16:21,565 - INFO - Existing visitor: 127.0.0.1
+Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 170, in view_blogposts
+    return render_template('view_blogposts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 99, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 22, in block 'content'
+    By {{ post.post_author.first_name if post.post_author else 'Unknown' }} on {{ post.date_posted.strftime('%Y-%m-%d') }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'website.models.BlogPost object' has no attribute 'date_posted'
+2025-05-05 02:16:21,615 - ERROR - Exception on /view_posts [GET]
+Traceback (most recent call last):
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/website/views.py", line 170, in view_blogposts
+    return render_template('view_blogposts.html', posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/david/Desktop/portfolio/website/templates/base.html", line 99, in top-level template code
+    {% block content %}
+  File "/home/david/Desktop/portfolio/website/templates/view_blogposts.html", line 22, in block 'content'
+    By {{ post.post_author.first_name if post.post_author else 'Unknown' }} on {{ post.date_posted.strftime('%Y-%m-%d') }}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/david/Desktop/portfolio/venv/lib/python3.11/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'website.models.BlogPost object' has no attribute 'date_posted'

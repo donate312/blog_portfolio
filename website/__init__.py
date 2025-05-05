@@ -34,7 +34,7 @@ logging.basicConfig(
 
 def create_app() -> Flask:   
     app = Flask(__name__) # Initialize Flask app
-    #csrf.init_app(app)  # Initialize CSRF protection
+    csrf.init_app(app)  # Initialize CSRF protection
     
     # Load configuration
     app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'default_secret_key')
@@ -52,19 +52,19 @@ def create_app() -> Flask:
     # Initialize extensions
     db.init_app(app)
     migrate.init_app(app, db)
-    csrf.init.app(app)
+    CSRFProtect(app)
     mail.init_app(app)
          
     # Register blueprints
     from .views import views
     from .auth import auth
-    from .blog import blog
+    from .views import blog
     from .counter import counter
 
 
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
-    app.register_blueprint(blog, url_prefix='/')
+    app.register_blueprint(blog, url_prefix='')
     app.register_blueprint(counter, url_prefix='/counter')
     
     # Import models and create database
