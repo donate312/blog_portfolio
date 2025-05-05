@@ -10625,3 +10625,6 @@ Traceback (most recent call last):
     return getattr(obj, attribute)
            ^^^^^^^^^^^^^^^^^^^^^^^
 jinja2.exceptions.UndefinedError: 'website.models.BlogPost object' has no attribute 'date_posted'
+2025-05-05 02:21:53,275 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 02:28:29,583 - INFO - Existing visitor: 127.0.0.1
+2025-05-05 02:32:19,248 - INFO - Existing visitor: 127.0.0.1
