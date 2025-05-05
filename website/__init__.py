@@ -2,6 +2,7 @@ import os
 from os import path
 import logging
 from dotenv import load_dotenv
+from flask_mail import Mail
 from flask import Flask, render_template, session, jsonify, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, current_user
@@ -14,6 +15,7 @@ from uuid import uuid4
 db = SQLAlchemy()
 migrate = Migrate()
 csrf = CSRFProtect()
+mail = Mail()
 load_dotenv()
 
 # Database configuration
@@ -32,33 +34,45 @@ logging.basicConfig(
 
 def create_app() -> Flask:   
     app = Flask(__name__) # Initialize Flask app
-    csrf.init_app(app)  # Initialize CSRF protection
+    #csrf.init_app(app)  # Initialize CSRF protection
     
     # Load configuration
     app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'default_secret_key')
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_PATH}'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
+     # Flask-Mail configuration for Gmail
+    app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+    app.config['MAIL_PORT'] = 587
+    app.config['MAIL_USE_TLS'] = True
+    app.config['MAIL_USERNAME'] = 'david.onate312@gmail.com'
+    app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD') # Replace with Gmail App Password
+    app.config['MAIL_DEFAULT_SENDER'] = 'david.onate312@gmail.com'
+
     # Initialize extensions
     db.init_app(app)
     migrate.init_app(app, db)
-    CSRFProtect(app)
+    csrf.init.app(app)
+    mail.init_app(app)
          
     # Register blueprints
     from .views import views
     from .auth import auth
-    from .views import blog
+    from .blog import blog
     from .counter import counter
 
 
     app.register_blueprint(views, url_prefix='/')
-    app.register_blueprint(auth, url_prefix='')
-    app.register_blueprint(blog, url_prefix='')
+    app.register_blueprint(auth, url_prefix='/')
+    app.register_blueprint(blog, url_prefix='/')
     app.register_blueprint(counter, url_prefix='/counter')
     
     # Import models and create database
-    from .models import User, Note, Visitor
-    create_database(app)
+    from .models import User, Note, Visitor, ContactMessage, BlogPost
+    
+    with app.app_context():
+        db.create_all()  # Create database tables
+        #create_database(app)
     
     # Set up Flask-Login
     login_manager = LoginManager()
@@ -127,9 +141,9 @@ def create_app() -> Flask:
 
     return app
 
-def create_database(app: Flask):
-        with app.app_context():
-            if not path.exists(DB_PATH):
-                db.create_all()
-                logging.info(f'Database created at {DB_PATH}')
+#def create_database(app: Flask):
+ #       with app.app_context():
+  #          if not path.exists(DB_PATH):
+   #             db.create_all()
+    #            logging.info(f'Database created at {DB_PATH}')
     

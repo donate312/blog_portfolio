@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, flash, jsonify, redirect, url_for
 from flask_login import login_required, current_user
-from .models import Note, BlogPost, Visitor
-from . import db
+from .models import Note, BlogPost, Visitor, ContactMessage
+from . import db, mail
 from .forms import BlogPostForm, EditPostForm, NoteForm
 from flask_wtf import FlaskForm
 from wtforms import StringField, TextAreaField, SubmitField
@@ -11,6 +11,7 @@ import os
 import logging
 from datetime import datetime
 from flask_wtf.csrf import validate_csrf
+from flask_mail import Message
 
 views = Blueprint('views', __name__)
 blog = Blueprint('blog', __name__)
@@ -70,7 +71,37 @@ def resume():
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
+        # Log the submission
         logging.info(f"Contact form submission: Name={form.name.data}, Email={form.email.data}, Message={form.message.data}")
+        
+        # Store in database
+        try:
+            contact_message = ContactMessage(
+                name=form.name.data,
+                email=form.email.data,
+                message=form.message.data
+            )
+            db.session.add(contact_message)
+            db.session.commit()
+            logging.info(f"Stored contact message ID={contact_message.id}")
+        except Exception as e:
+            db.session.rollback()
+            logging.error(f"Error storing contact message: {str(e)}")
+        
+        # Send email
+        try:
+            msg = Message(
+                subject=f"New Contact Form Submission from {form.name.data}",
+                recipients=['david.onate312@gmail.com'],
+                body=f"Name: {form.name.data}\nEmail: {form.email.data}\n\nMessage:\n{form.message.data}"
+            )
+            mail.send(msg)
+            logging.info(f"Email sent to david.onate312@gmail.com for submission from {form.email.data}")
+        except Exception as e:
+            logging.error(f"Error sending email: {str(e)}")
+            flash('Message logged, but email sending failed. I’ll follow up soon!', category='warning')
+            return redirect(url_for('views.home'))
+
         flash('Thank you for your message! I’ll get back to you soon.', category='success')
         return redirect(url_for('views.home'))
     return render_template('contact.html', form=form, user=current_user)
