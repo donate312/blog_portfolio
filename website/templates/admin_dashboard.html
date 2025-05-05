@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+<div class="container my-4">
+    <h1 class="text-center mb-4">Admin Dashboard</h1>
+
+    <!-- Visitor Statistics -->
+    <section class="mb-5">
+        <h2>Visitor Statistics</h2>
+        <p>Total Unique Visitors: {{ visitor_count }}</p>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="mb-5">
+        <h2>Blog Posts</h2>
+        <a href="{{ url_for('blog.create_post') }}" class="btn btn-primary mb-3">Create New Post</a>
+        {% if posts %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for post in posts %}
+                <tr>
+                    <td>{{ post.title }}</td>
+                    <td>{{ post.date.strftime('%Y-%m-%d') }}</td>
+                    <td>
+                        <a href="{{ url_for('blog.edit_post', post_id=post.id) }}" class="btn btn-sm btn-outline-primary">Edit</a>
+                        <button class="btn btn-sm btn-outline-danger" onclick="deletePost('{{ post.id }}')">Delete</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No blog posts available.</p>
+        {% endif %}
+    </section>
+
+    <!-- Contact Messages -->
+    <section class="mb-5">
+        <h2>Contact Messages</h2>
+        {% if messages %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Message</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for message in messages %}
+                <tr>
+                    <td>{{ message.name }}</td>
+                    <td>{{ message.email }}</td>
+                    <td>{{ message.message | truncate(100, True) }}</td>
+                    <td>{{ message.date.strftime('%Y-%m-%d %H:%M') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No contact messages received.</p>
+        {% endif %}
+    </section>
+</div>
+
+<script>
+    function deletePost(postId) {
+        const csrfToken = document.querySelector('input[name="csrf_token"]').value;
+        if (confirm('Are you sure you want to delete this post?')) {
+            fetch(`/blog/delete_post/${postId}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-Token': csrfToken
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    window.location.reload();
+                } else {
+                    alert(data.message || 'Failed to delete post');
+                }
+            })
+            .catch(error => {
+                alert('An error occurred while deleting the post');
+            });
+        }
+    }
+</script>
+{% endblock %}

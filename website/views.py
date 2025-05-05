@@ -71,10 +71,7 @@ def resume():
 def contact():
     form = ContactForm()
     if form.validate_on_submit():
-        # Log the submission
         logging.info(f"Contact form submission: Name={form.name.data}, Email={form.email.data}, Message={form.message.data}")
-        
-        # Store in database
         try:
             contact_message = ContactMessage(
                 name=form.name.data,
@@ -87,8 +84,6 @@ def contact():
         except Exception as e:
             db.session.rollback()
             logging.error(f"Error storing contact message: {str(e)}")
-        
-        # Send email
         try:
             msg = Message(
                 subject=f"New Contact Form Submission from {form.name.data}",
@@ -148,47 +143,65 @@ def certs():
     certs_list = list_files_in_directory(certs_folder)
     return render_template('certs.html', images=certs_list, user=None)
 
+@views.route('/admin/dashboard')
+@login_required
+def admin_dashboard():
+    if not current_user.is_admin:
+        flash('You are not authorized to access the admin dashboard.', category='error')
+        return redirect(url_for('views.home'))
+    posts = BlogPost.query.all()
+    messages = ContactMessage.query.all()
+    visitor_count = Visitor.query.count()
+    return render_template('admin_dashboard.html', user=current_user, posts=posts, messages=messages, visitor_count=visitor_count)
+
 @blog.route('/post', methods=['GET', 'POST'])
 @login_required
 def create_post():
+    if not current_user.is_admin:
+        flash('You are not authorized to create posts.', category='error')
+        return redirect(url_for('views.home'))
     form = BlogPostForm()
     if form.validate_on_submit():
         new_post = BlogPost(
             title=form.title.data,
             content=form.content.data,
-            author=current_user
+            author=current_user.id
         )
         db.session.add(new_post)
         db.session.commit()
         flash('Blog post created successfully!', category='success')
         return redirect(url_for('blog.view_blogposts'))
-    return render_template('create_post.html', form=form)
+    return render_template('create_post.html', form=form, user=current_user)
 
 @blog.route('/view_posts')
 def view_blogposts():
     posts = BlogPost.query.all()
-    return render_template('view_blogposts.html', posts=posts)
+    return render_template('view_blogposts.html', posts=posts, user=current_user)
 
-@blog.route('blog/delete_post/<int:post_id>', methods=['DELETE'])
+@blog.route('/delete_post/<int:post_id>', methods=['DELETE'])
 @login_required
 def delete_post(post_id):
+    if not current_user.is_admin:
+        flash('You are not authorized to delete posts.', category='error')
+        return jsonify({'success': False, 'message': 'Unauthorized'}), 403
+
     csrf_token = request.headers.get('X-CSRF-Token')
     try:
         validate_csrf(csrf_token)
     except Exception as e:
-        return jsonify({'success': False, 'error': 'Invalid CSRF token'}), 403
-    
-    if not current_user.is_authenticated:
-        return jsonify({'success': False, 'message': 'Unauthorized'}), 403
+        logging.error(f'CSRF validation failed for post {post_id}: {str(e)}')
+        return jsonify({'success': False, 'message': 'Invalid CSRF token'}), 403
     
     post = BlogPost.query.get_or_404(post_id)
-    if post.author != current_user.id and not current_user.is_admin:
-        return jsonify({'success': False, 'message': 'Unauthorized'}), 403
-    
-    db.session.delete(post)
-    db.session.commit()
-    flash('Post deleted successfully!', category='success')
-    return jsonify({'success': True})
+    try:
+        db.session.delete(post)
+        db.session.commit()
+        logging.info(f'Post {post_id} deleted by user {current_user.id}')
+        return jsonify({'success': True, 'message': 'Post deleted successfully'}), 200
+    except Exception as e:
+        db.session.rollback()
+        logging.error(f'Error deleting post {post_id}: {str(e)}')
+        return jsonify({'success': False, 'message': 'An error occurred while deleting the post'}), 500
 
 @blog.route('/edit_post/<int:post_id>', methods=['GET', 'POST'])
 @login_required
@@ -197,14 +210,14 @@ def edit_post(post_id):
         flash('You are not authorized to edit posts.', category='error')
         return redirect(url_for('blog.view_blogposts'))
     post = BlogPost.query.get_or_404(post_id)
-    form = BlogPostForm(obj=post)
+    form = EditPostForm(obj=post)
     if form.validate_on_submit():
         post.title = form.title.data
         post.content = form.content.data
         db.session.commit()
         flash('Post updated successfully!', category='success')
         return redirect(url_for('blog.view_blogposts'))
-    return render_template('edit_post.html', form=form, post=post)
+    return render_template('edit_post.html', form=form, post=post, user=current_user)
 
 @views.route('/visitor-counter')
 def visitor_counter():
