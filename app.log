@@ -9980,3 +9980,55 @@ NameError: name 'logging' is not defined
 2025-05-04 22:55:16,227 - INFO - Existing visitor: 127.0.0.1
 2025-05-04 22:55:43,010 - INFO - Existing visitor: 127.0.0.1
 2025-05-04 22:56:30,376 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:57:42,998 - INFO - Visitor count file does not exist, returning 0
+2025-05-04 22:57:43,052 - INFO - Visitor count file does not exist, returning 0
+2025-05-04 22:57:43,129 - INFO - Visitor count file does not exist, returning 0
+2025-05-04 22:57:43,144 - INFO - Visitor count file does not exist, returning 0
+2025-05-04 22:57:43,251 - INFO - Visitor count file does not exist, returning 0
+2025-05-04 22:57:59,244 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:57:59,553 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:00,092 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:00,368 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:02,270 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:08,395 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:10,582 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:11,090 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:11,338 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:11,716 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:29,037 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:29,300 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:29,756 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:30,030 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:33,654 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:35,470 - INFO - Guest user created with email: guest_2396c29e-a6ec-4c3f-89e1-4de1b08b5d27@example.com
+2025-05-04 22:58:35,733 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:36,094 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:36,094 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:58:36,368 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:59:00,654 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:59:01,276 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 22:59:01,548 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:01:27,832 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:03:04,487 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:03:55,372 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:03:55,479 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:03:59,504 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:08:37,542 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:09:03,250 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:09:28,677 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:09:32,195 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:11:40,597 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:15:06,136 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:18:25,427 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:18:41,981 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:18:42,975 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:18:43,412 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:18:44,031 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:18:48,277 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:18:49,778 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:18:50,291 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:19:02,352 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:21:07,284 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:25:45,291 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:29:02,399 - INFO - Existing visitor: 127.0.0.1
+2025-05-04 23:33:21,090 - INFO - Existing visitor: 127.0.0.1
