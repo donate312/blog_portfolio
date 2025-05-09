@@ -152,6 +152,12 @@ def admin_dashboard():
     posts = BlogPost.query.all()
     messages = ContactMessage.query.all()
     visitor_count = Visitor.query.count()
+
+    # Log and handle posts with missing dates
+    for post in posts:
+        if post.date is None:
+            logging.warning(f"Post with ID {post.id} has no date.")
+            post.date = datetime.utcnow()  # Set a default date if necessary
     return render_template('admin_dashboard.html', user=current_user, posts=posts, messages=messages, visitor_count=visitor_count)
 
 @blog.route('/post', methods=['GET', 'POST'])
