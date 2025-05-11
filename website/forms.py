@@ -17,6 +17,7 @@ class BlogPostForm(FlaskForm):
 class EditPostForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
     content = TextAreaField('Content', validators=[DataRequired()])
+    submit = SubmitField('Update Post')
 
 class NoteForm(FlaskForm):
     note = TextAreaField('Note')

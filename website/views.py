@@ -182,6 +182,11 @@ def create_post():
 @blog.route('/view_posts')
 def view_blogposts():
     posts = BlogPost.query.all()
+
+    for post in posts:
+        if post.date is None:
+            logging.warning(f"Post with ID {post.id} has no date.")
+            post.date = datetime.utcnow()  # Set a default date if necessary
     return render_template('view_blogposts.html', posts=posts, user=current_user)
 
 @blog.route('/delete_post/<int:post_id>', methods=['DELETE'])
